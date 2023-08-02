@@ -31,3 +31,10 @@ methylation
     dragen --output-directory /staging/hash_table/human/hg38_methylation/ --build-hash-table true --ht-reference hg38.fa --ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam --ht-decoys /opt/edico/liftover/hs_decoys.fa --ht-num-thread 40 --ht-methylated true
 ```
 
+## 4.genome fasta
+
+**hg19:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hg19.fa>
+
+**hg38:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hg38.fa>
+
+**hs37d5:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hg19.fa>
