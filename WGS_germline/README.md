@@ -51,6 +51,11 @@
 --vc-enable-high-sensitivity-mode=true
 ```
 
+**Pharmacogenomics (PGx) grouping**
+```cs
+--enable-pgx=true
+```
+
 # CNV分析参数
 ```cs
 --enable-cnv true
