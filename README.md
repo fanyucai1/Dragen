@@ -6,5 +6,6 @@
 - [数据拆分](bcl2fastq/README.md)
 - [遗传病WGS](WGS_germline/README.md)
 - [遗传病WES](WES_germline/README.md)
+- [扩增子panel_somatic](Amplicon_somatic/README.md)
 - [数据压缩](ora-compression/README.md)
 - [RPIP](RPIP/README.md)
