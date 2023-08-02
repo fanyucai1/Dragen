@@ -1,6 +1,6 @@
 # 压缩参考基因组
 
-**Illumina DRAGEN Systematic Noise Files:**
+**Illumina ORA Compression Reference Files:**
 
 <https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html>
 
