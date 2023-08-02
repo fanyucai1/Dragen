@@ -51,3 +51,17 @@
 --vc-enable-high-sensitivity-mode=true
 ```
 
+# CNV分析参数
+```cs
+--enable-cnv true
+--cnv-filter-copy-ratio 0.2     #   The default value is 0.2, leading to calls less than CR=0.8 or greater than CR=1.2.
+--cnv-filter-length 10000       #   Specifies the minimum event length in bases at which a reported event is marked as PASS in the output VCF file. The default is 10000
+--cnv-filter-qual 10            #   PASS in the output VCF file
+```
+# CNV 解析度
+|WGS_Coverag_per_Sample| Recommended_Resolution(bp)|
+|-----------|----------|
+|5X|10000|
+|10X|5000|
+|>=30X|1000|
+*–cnv-interval-width* 用来控制解析度，WES默认是500，WGS默认是1000该参数在分析是需要设置，如果设置变小会增加分析时间
