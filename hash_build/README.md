@@ -4,6 +4,8 @@
 
 ![人类参考基因组](./hash_build_1.png)
 
+构建图形基因Graph references的参数：*--ht-apply-graph=true*
+
 ## 2.Illumina DRAGEN Reference Genome
 <https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html>
 
@@ -28,3 +30,4 @@ methylation
 ```cs
     dragen --output-directory /staging/hash_table/human/hg38_methylation/ --build-hash-table true --ht-reference hg38.fa --ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam --ht-decoys /opt/edico/liftover/hs_decoys.fa --ht-num-thread 40 --ht-methylated true
 ```
+
