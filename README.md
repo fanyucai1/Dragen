@@ -1,5 +1,6 @@
 # dragen学习资料汇总
 
+![Comprehensive trio WGS bioinformatics pipeline.jpg](./Comprehensive trio WGS bioinformatics pipeline.jpg)
 - [dragen在线帮助文档](https://support-docs.illumina.com/SW/dragen_v42/Content/SW/FrontPages/DRAGEN.htm)
 - [dragen软件下载](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html?langsel=/my/)
 - [dragen-bio-it-platform-Getting Started Guide.pdf](Dcouments/dragen-bio-it-platform-Getting-Started-Guide.pdf)
