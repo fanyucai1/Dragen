@@ -37,4 +37,4 @@ methylation
 
 **hg38:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hg38.fa>
 
-**hs37d5:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hg19.fa>
+**hs37d5:**<https://ilmn-dragen-giab-samples.s3.amazonaws.com/FASTA/hs37d5.fa>
