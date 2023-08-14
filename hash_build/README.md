@@ -4,7 +4,7 @@
 
 构建图形基因Graph references的参数：*--ht-apply-graph=true*
 
-## 在线下载
+## 建议在线下载
 <https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html>
 
 ## 本地构建
