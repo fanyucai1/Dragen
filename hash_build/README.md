@@ -1,6 +1,6 @@
 # 1.人类参考基因组
 
-![人类参考基因组](./hash_build_huamn.png)
+![hash_build](./hash_build_human.png)
 
 构建图形基因Graph references的参数：*--ht-apply-graph=true*
 
