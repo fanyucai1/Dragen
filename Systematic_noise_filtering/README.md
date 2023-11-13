@@ -37,7 +37,6 @@ tumor-normal:<br>**--vc-systematic-noise-filter-threshold 10**
 
 tumor only:<br>**--vc-systematic-noise-filter-threshold 60**
 
-
 5. 该分析可以减少假阳性
 
 |SNP|Indel|
