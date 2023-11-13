@@ -1,11 +1,5 @@
 # 过滤测序系统误差
 
-可以减少假阳性
-
-![snp.png](./SNV.png)
-
-![Indel.png](./Indel.png)
-
 已有文件下载：https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html
 
 1. 该分析过程可用于Tumor-Normal or Tumor-Only somatic mode
@@ -39,4 +33,10 @@
     **--vc-systematic-noise <prefix>.systematic_noise.bed.gz**
     tumor-normal:<br>**--vc-systematic-noise-filter-threshold 10**
     tumor only:<br>**--vc-systematic-noise-filter-threshold 60**
-```{.cs}
+```
+
+5. 该分析可以减少假阳性
+
+![snp.png](./SNV.png)
+
+![Indel.png](./Indel.png)
