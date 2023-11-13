@@ -23,4 +23,6 @@
 
 
 
+## Explore recent
 
+[DRAGEN publications:https://developer.illumina.com/news-updates/dragen-publications](https://developer.illumina.com/news-updates/dragen-publications) 
