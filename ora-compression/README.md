@@ -48,4 +48,6 @@ dragen --bcl-conversion-only true --bcl-input-directory ${1} \
 | BWA    | 0.7.15 |	Fastq|
 | FastQC |0.11.9	|Fastq|
 
+# 解压缩
 
+[dragen-ora-decompression](./1000000138036_03_dragen-ora-decompression-v261-product-documentation.PDF)
