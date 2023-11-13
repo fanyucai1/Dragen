@@ -26,3 +26,13 @@
 ## Explore recent
 
 [DRAGEN publications:https://developer.illumina.com/news-updates/dragen-publications](https://developer.illumina.com/news-updates/dragen-publications) 
+
+
+## Technical Assistance
+
+Email: techsupport@illumina.com
+
+## Illumina Technical Support Telephone Numbers
+|Region | Toll Free |International
+|-------|-----------|------------|
+|china |           | +86 400 066 5835|
