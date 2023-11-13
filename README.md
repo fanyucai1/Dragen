@@ -19,7 +19,7 @@
 - [数据压缩](ora-compression/README.md)
 - [RPIP](RPIP/README.md)
 - [参考基因组](hash_build/README.md)
-- [系统误差文件](Systematic_noise_filtering/README.md)
+- [测序系统误差](Systematic_noise_filtering/README.md)
 
 
 
