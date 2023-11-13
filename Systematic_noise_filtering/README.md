@@ -40,6 +40,6 @@ tumor only:<br>**--vc-systematic-noise-filter-threshold 60**
 
 5. 该分析可以减少假阳性
 
-![snp.png](./SNV.png)
-
-![Indel.png](./Indel.png)
+|SNP|Indel|
+|----|----|
+|![snp.png](./SNV.png)|![Indel.png](./Indel.png)|
