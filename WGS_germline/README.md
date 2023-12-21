@@ -12,7 +12,7 @@
     --vc-enable-vcf-output true \
     --enable-vcf-compression true \
     --enable-cnv true \
-    --cnv-enable-self-normalization true \
+    --cnv-enable-self-normalization true
 ```
 
 **SV**

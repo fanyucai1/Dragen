@@ -8,44 +8,39 @@
 <https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html>
 
 ## 本地构建
-### hg19
-DNA+CNV+RNA
-```cs
-    dragen --output-directory /staging/hash_table/human/hg19_CNV_RNA/ \
-    --build-hash-table true --ht-reference hg19.fa \
-    --ht-alt-liftover /opt/edico/liftover/hg19_alt_liftover.sam \
-    --ht-decoys /opt/edico/liftover/hs_decoys.fa \
-    --enable-cnv true --ht-num-thread 40 \
-    --ht-build-rna-hashtable true
-```
-methylation
-```cs
-    dragen --output-directory /staging/hash_table/human/hg19_methylation/ \
-    --build-hash-table true --ht-reference hg19.fa \
-    --ht-alt-liftover /opt/edico/liftover/hg19_alt_liftover.sam \
-    --ht-decoys /opt/edico/liftover/hs_decoys.fa \
-    --ht-num-thread 40 --ht-methylated true \
-    --ht-methylated-combined=true
-```
 ### hg38
 DNA+CNV+RNA
 ```cs
-    dragen --output-directory /staging/hash_table/human/hg38_CNV_RNA/ \
-    --build-hash-table true --ht-build-rna-hashtable true \
-    --enable-cnv true --ht-reference hg38.fa \
-    --ht-num-threads 40 --ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam \
-    --ht-pop-alt-contigs /opt/edico/liftover/pop_altContig.fa.gz \
-    --ht-pop-alt-liftover /opt/edico/liftover/pop_liftover.sam.gz \
-    --ht-pop-snps /opt/edico/liftover/pop_snps.vcf.gz
+dragen --build-hash-table true
+--output-directory /staging/hash_table/human/hg38_alt-masked_graph_cnv_hla_rna/ \
+--ht-reference hg38.fa \
+--ht-num-threads 40 \
+--ht-seed-len 27 \
+--ht-build-rna-hashtable true --enable-cnv true \
+--ht-build-hla-hashtable true \
+--ht- hla-reference /opt/edico/resources/hla/HLA_resource.v2.fasta.gz
+--ht-apply-graph=true \
+--ht-pop-alt-contigs /opt/edico/liftover/pop_altContig.fa.gz \
+--ht-pop-alt-liftover /opt/edico/liftover/pop_liftover.sam.gz \
+--ht-pop-snps /opt/edico/liftover/pop_snps.vcf.gz \
+--ht-suppress-mask=true \
+--ht-mask-bed /opt/edico/fasta_mask/hg38_alt_mask.bed \
+--ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam \
+--ht-suppress-decoys=true
+--ht-decoys /opt/edico/liftover/hs_decoys.fa
 ```
 methylation
 ```cs
-    dragen --output-directory /staging/hash_table/human/hg38_methylation/ \
-    --build-hash-table true --ht-reference hg38.fa \
-    --ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam \
-    --ht-decoys /opt/edico/liftover/hs_decoys.fa \
-    --ht-num-thread 40 --ht-methylated true
+dragen --build-hash-table true
+--output-directory /staging/hash_table/human/hg38_methylation/ \
+--ht-reference hg38.fa \
+--ht-num-threads 40 \
+--ht-seed-len 27 \
+--ht-methylated-combined=true
+--ht-methylated=true \
+--ht-alt-liftover /opt/edico/liftover/hg19_alt_liftover.sam
 ```
+
 
 ## fasta文件下载
 
