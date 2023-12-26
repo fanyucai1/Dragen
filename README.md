@@ -32,12 +32,17 @@
 
 ## Resource
 
-
 a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
 
 [1000G_phase1.snps.high_confidence.b37.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz)
 
 [1000G_phase1.snps.high_confidence.hg38.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz)
+
+## Third-party tool compatibility
+
+[MultiQC：https://multiqc.info/](https://multiqc.info/)
+
+[Fusion-report](https://github.com/Clinical-Genomics/fusion-report)
 
 ## Technical Assistance
 
