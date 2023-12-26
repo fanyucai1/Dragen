@@ -30,6 +30,8 @@
 
 [DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications) 
 
+[Illumina DRAGEN Bio-IT Platform Product Files](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
+
 ## Resource
 
 
