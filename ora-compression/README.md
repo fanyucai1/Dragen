@@ -4,6 +4,8 @@
 
 <https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html>
 
+[DRAGEN ORA Support Resources](https://sapac.support.illumina.com/sequencing/sequencing_software/DRAGENORA.html)
+
 # 数据压缩命令
 ```cs
 dragen --ora-input ${1} --ora-input2 ${2} \#R1+R2 fastq
@@ -39,6 +41,23 @@ dragen -r ${1} -1 ${2} -2 ${3} \
 dragen --bcl-conversion-only true --bcl-input-directory ${1} \
 --output-directory ${2} --force --sample-sheet  ${3} --ora-reference=${4} \
 --fastq-compression-format=dragen
+```
+
+# 解压缩
+```cs
+dragen --ora-input ${1} \ #输入ora文件 
+--output-directory ${2} \
+--ora-reference ${3} \ #输入压缩参考基因组
+--enable-ora true --enable-map-align false \
+--ora-decompress true
+```
+```cs
+orad file.fastq.ora -c --raw | bwa mem humanref.fasta - > resu.sam
+bwa mem humanref.fasta <(orad file.fastq.ora -c --raw) > resu.sam
+```
+```cs
+md5sum <(gzip -d -c myfile.fastq.gz) 
+md5sum <(orad myfile.fastq.ora --raw –c )
 ```
 
 # 生信软件兼容
