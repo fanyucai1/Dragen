@@ -30,6 +30,14 @@
 
 [DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications) 
 
+## Resource
+
+
+a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
+
+[1000G_phase1.snps.high_confidence.b37.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz)
+
+[1000G_phase1.snps.high_confidence.hg38.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz)
 
 ## Technical Assistance
 
@@ -40,11 +48,3 @@ Email: techsupport@illumina.com
 |Region | Toll Free |International|
 |-------|-----------|------------|
 |china |           | +86 400 066 5835|
-
-## Resource
-
-a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
-
-[1000G_phase1.snps.high_confidence.b37.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz)
-
-[1000G_phase1.snps.high_confidence.hg38.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz)
