@@ -40,9 +40,9 @@ a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
 
 ## Third-party tool compatibility
 
-[MultiQC：https://multiqc.info/](https://multiqc.info/)
+[MultiQC searches a given directory for analysis logs and compiles a HTML report. It's a general use tool, perfect for summarising the output from numerous bioinformatics tools.](https://multiqc.info/)
 
-[Fusion-report](https://github.com/Clinical-Genomics/fusion-report)
+[Fusion-report is part of a bigger project nf-core/rnafusion which is designed to detect and report fusion genes from RNA-seq data.](https://github.com/Clinical-Genomics/fusion-report)
 
 ## Technical Assistance
 
