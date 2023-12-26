@@ -20,6 +20,9 @@
 - [RPIP](RPIP/README.md)
 - [参考基因组](hash_build/README.md)
 - [测序系统误差](Systematic_noise_filtering/README.md)
+- [体细胞-tumor-only](somatic_tumor_only/README.md)
+- [体细胞-tumor vs normal](somatic_tumor_normal/README.md)
+- [变异注释](./annotation/README.md)
 
 
 
