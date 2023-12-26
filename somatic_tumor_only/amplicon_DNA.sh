@@ -5,4 +5,8 @@ dragen -f -r ${1} \
     --amplicon-target-bed=${6} \
     --enable-dna-amplicon true --enable-map-align=true \
     --enable-sort=true --enable-map-align-output=true \
-    --enable-variant-caller=true --enable-cnv=true --enable-sv=true
+    --enable-variant-caller=true \
+    --enable-cnv=true \
+    --enable-sv=true \
+    --vc-use-somatic-hotspots false \
+    --amplicon-primer-length 50

@@ -27,13 +27,14 @@ dragen -f -r ${1} --tumor-fastq1=${2} --tumor-fastq2=${3} \
 --vc-systematic-noise /path/to/WGS_hg38_v1.0_systematic_noise.bed.gz
 ```
 Download Prebuilt file:
-Download Link:
 [Illumina DRAGEN Systematic Noise Files:https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
 
 ![prebuilt_systematic_noise_files](./prebuilt_systematic_noise_files.png)
 
-
+**Germline filtering**
+```{.cs}
 --vc-enable-germline-tagging=true \
 --enable-variant-annotation=true \
 --variant-annotation-data /path/to/nivarna/ \
---variant-annotation-assembly GRch38 \
+--variant-annotation-assembly GRch38
+```

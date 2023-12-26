@@ -15,6 +15,14 @@
     --vc-detect-systematic-noise true
 ```
 
+other parameter 
+```{.cs}
+--vc-enable-germline-tagging=true \
+--enable-variant-annotation=true \
+--variant-annotation-data {NIRVANA_ANNOTATION_FOLDER} \
+--variant-annotation-assembly {REFERENCE} \
+```
+
 3. 将正常样本生成的vcf放在一个list文件中，一行一个vcf文件,最终生成bed文件 ::
 ```{.cs}
     dragen -f --ref-dir=${1} \
