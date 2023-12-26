@@ -28,7 +28,7 @@
 
 ## Explore recent
 
-[DRAGEN publications:https://developer.illumina.com/news-updates/dragen-publications](https://developer.illumina.com/news-updates/dragen-publications) 
+[DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications) 
 
 
 ## Technical Assistance
@@ -45,6 +45,6 @@ Email: techsupport@illumina.com
 
 a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
 
-https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz
+[1000G_phase1.snps.high_confidence.b37.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz)
 
-https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+[1000G_phase1.snps.high_confidence.hg38.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz)
