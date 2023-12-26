@@ -31,3 +31,9 @@ Download Link:
 [Illumina DRAGEN Systematic Noise Files:https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
 
 ![prebuilt_systematic_noise_files](./prebuilt_systematic_noise_files.png)
+
+
+--vc-enable-germline-tagging=true \
+--enable-variant-annotation=true \
+--variant-annotation-data /path/to/nivarna/ \
+--variant-annotation-assembly GRch38 \
