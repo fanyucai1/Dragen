@@ -1,0 +1,11 @@
+dragen -f -r ${1} --tumor-fastq1=${2} --tumor-fastq2=${3} \
+--RGID-tumor RGID --RGSM-tumor ${4} \
+--output-directory ${5} --output-file-prefix ${4} \
+--enable-duplicate-marking true --enable-sort true \
+--output-format BAM --enable-map-align true \
+--enable-map-align-output true --enable-bam-indexing true \
+--enable-variant-caller true --vc-target-bed=${6} \
+--enable-cnv true --cnv-target-bed ${6} --cnv-normals-list ${7} \
+--enable-sv true --sv-call-regions-bed ${6} \
+--sv-exome true --sv-use-overlap-pair-envidence true \
+--high-coverage-support-mode true

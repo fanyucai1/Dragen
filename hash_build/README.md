@@ -38,7 +38,7 @@ dragen --build-hash-table true
 --ht-seed-len 27 \
 --ht-methylated-combined=true
 --ht-methylated=true \
---ht-alt-liftover /opt/edico/liftover/hg19_alt_liftover.sam
+--ht-alt-liftover /opt/edico/liftover/bwa-kit_hs38DH_liftover.sam
 ```
 
 
