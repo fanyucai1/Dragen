@@ -49,6 +49,8 @@
 **High Sensitivity Mode**
 ```cs
 --vc-enable-high-sensitivity-mode=true
+default=false
+可以检出低等位基因频率的变异（又名嵌合体变异）
 ```
 
 **Pharmacogenomics (PGx) grouping**
