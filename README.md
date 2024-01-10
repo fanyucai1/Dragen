@@ -22,6 +22,7 @@
 - [体细胞-tumor-only](somatic_tumor_only/README.md)
 - [体细胞-tumor vs normal](somatic_tumor_normal/README.md)
 - [变异注释](./annotation/README.md)
+- [RNAseq数据分析](./RNAseq/README.md)
 
 
 ## Explore recent
