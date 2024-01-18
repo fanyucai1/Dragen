@@ -55,6 +55,8 @@ dragen -r ${1} -1 ${2} -2 ${3} \
 |>=30X|1000|
 *–cnv-interval-width* 用来控制解析度，WES默认是500，WGS默认是1000该参数在分析是需要设置，如果设置变小会增加分析时间
 
+*--vc-target-bed-padding 100*
+
 # 参考文献
 
 **dragen_PoN**

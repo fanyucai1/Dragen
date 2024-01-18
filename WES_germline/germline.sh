@@ -1,0 +1,14 @@
+dragen -f -r /staging/human/reference/hg19_DNA_RNA_CNV/ -1 ${1} -2 ${2} \
+--output-file-prefix ${3} \
+--output-directory ${4} \
+--RGID Normal_RGID --RGSM ${3} \
+--enable-map-align true \
+--enable-map-align-output true \
+--output-format bam --enable-sort true \
+--enable-duplicate-marking true \
+--enable-variant-caller true \
+--enable-vcf-compression true \
+--vc-target-bed ${5} --vc-target-bed-padding 50 \
+--enable-cnv true \
+--cnv-target-bed ${5} --cnv-normals-list /staging/human/PoN/baseline/normal.list \
+--enable-sv true --sv-exome true --sv-call-regions-bed ${5}
