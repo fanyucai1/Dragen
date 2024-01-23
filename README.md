@@ -31,6 +31,8 @@
 
 [Illumina DRAGEN Bio-IT Platform Product Files](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
 
+[Behera S, Catreux S, Rossi M, et al. Comprehensive and accurate genome analysis at scale using DRAGEN accelerated algorithms[J]. bioRxiv, 2024: 2024.01. 02.573821.](https://www.biorxiv.org/content/10.1101/2024.01.02.573821v2.abstract)
+
 ## Resource
 
 a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
