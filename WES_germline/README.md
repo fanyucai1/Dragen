@@ -48,14 +48,31 @@ dragen -r ${1} -1 ${2} -2 ${3} \
 --cnv-filter-qual 10            #   PASS in the output VCF file
 ```
 # CNV 解析度
+
 |WGS_Coverag_per_Sample| Recommended_Resolution(bp)|
 |-----------|----------|
 |5X|10000|
 |10X|5000|
 |>=30X|1000|
-*–cnv-interval-width* 用来控制解析度，WES默认是500，WGS默认是1000该参数在分析是需要设置，如果设置变小会增加分析时间
 
+*–cnv-interval-width* 用来控制解析度，WES默认是500，WGS默认是1000该参数在分析是需要设置，如果设置变小会增加分析时间
+Diploid_or_Haploid
 *--vc-target-bed-padding 100*
+
+# VCF结果解释
+
+|||||
+|------------------|---|--------------------|----------|
+|Diploid_or_Haploid|ALT| FORMAT:CN          |FORMAT:GT|
+|Diploid|                 . |          2|          ./.|
+|Diploid                |DUP         |>2          |./1|
+|Diploid|                 DEL         |1           |0/1|
+|Diploid|                 DEL         |0           |1/1|
+|Haploid|                 .   |        1           |0|
+|Haploid |                DUP  |       >1          |1|
+|Haploid |                DEL   |      0  |         1|
+
+
 
 # 参考文献
 

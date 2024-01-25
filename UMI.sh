@@ -1,0 +1,15 @@
+dragen -f \
+-r /staging/human/reference/hg19_DNA_RNA_CNV/ \
+--tumor-fastq1 ${1} \
+--tumor-fastq2 ${2} \
+--output-file-prefix ${3} --output-directory ${4} \
+--RGID-tumor RGID-tumor --RGSM-tumor ${3} \
+--vc-target-bed ${5} \
+--enable-map-align true --enable-sort true \
+--enable-map-align-output true --output-format BAM \
+--enable-duplicate-marking false \
+--enable-bam-indexing true \
+--umi-enable true --umi-library-type nonrandom-duplex \
+--umi-nonrandom-whitelist ${6} \
+--umi-min-supporting-reads=2 \
+--vc-enable-umi-liquid true --high-coverage-support-mode true
