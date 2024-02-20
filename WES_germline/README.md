@@ -2,19 +2,20 @@
 
 ```cs
 dragen -f -r ${1} -1 ${2} -2 ${3} \
-    --RGID Normal_RGID --RGSM Nroma_RGSM \
+    --output-file-prefix ${4} \
+    --output-directory ${5}
+    --RGID illumina --RGSM ${4} \
     --enable-map-align true \
     --enable-map-align-output true \
     --output-format bam --enable-sort true \
     --enable-duplicate-marking true \
     --enable-variant-caller true \
     --enable-vcf-compression true \
-    --vc-target-bed ${4} \
+    --vc-target-bed ${6} \
     --enable-cnv true \
-    --cnv-target-bed ${4} --cnv-normals-list ${5} \
+    --cnv-target-bed ${6} --cnv-normals-list ${7} \
     --enable-sv true --sv-exome true --sv-call-regions-bed ${4} \
-    --output-file-prefix ${6} \
-    --output-directory ${7}
+
 ```
 
 # PoN建立正常样本基线
