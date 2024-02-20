@@ -14,8 +14,7 @@ dragen -f -r ${1} -1 ${2} -2 ${3} \
     --vc-target-bed ${6} \
     --enable-cnv true \
     --cnv-target-bed ${6} --cnv-normals-list ${7} \
-    --enable-sv true --sv-exome true --sv-call-regions-bed ${4} \
-
+    --enable-sv true --sv-exome true --sv-call-regions-bed ${6}
 ```
 
 # PoN建立正常样本基线
