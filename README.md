@@ -60,5 +60,3 @@ Email: techsupport@illumina.com
 |Region | Toll Free |International|
 |-------|-----------|------------|
 |china |           | +86 400 066 5835|
-
-123xxx
