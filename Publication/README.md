@@ -24,39 +24,37 @@
 
 1.  Pizzo L, Lewis T, Bolia A, et al. P579: Towards developing a comprehensive workflow for the identification of structural variants using clinical whole-genome sequencing[J]. Genetics in Medicine Open, 2024, 2.
 
-2.  [Schobers G, Derks R, den Ouden A, et al. Genome sequencing as a generic diagnostic strategy for rare disease[J]. Genome Medicine, 2024, 16(1): 32.](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-024-01301-y)
+2.  Malhotra A, Hejja R, Avecilla J, et al. P507: Implementation of automated pharmacogenomics reporting for a clinically validated whole genome sequencing test[J]. Genetics in Medicine Open, 2023, 1(1).
+
+3.  [Schobers G, Derks R, den Ouden A, et al. Genome sequencing as a generic diagnostic strategy for rare disease[J]. Genome Medicine, 2024, 16(1): 32.](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-024-01301-y)
 
 ### cfDNA
 
-3.  [Miceikaitė I, Hao Q, Brasch-Andersen C, et al. Comprehensive noninvasive fetal screening by deep trio-exome sequencing[J]. The New England journal of medicine, 2023, 389(21): 2017-2019.](https://www.nejm.org/doi/10.1056/NEJMc2307918)
+1.  [Miceikaitė I, Hao Q, Brasch-Andersen C, et al. Comprehensive noninvasive fetal screening by deep trio-exome sequencing[J]. The New England journal of medicine, 2023, 389(21): 2017-2019.](https://www.nejm.org/doi/10.1056/NEJMc2307918)
 
-4.  Kim S, Corey V, Chavez M, et al. P761: Calculating maternal polygenic risk scores from prenatal screening by cell-free DNA data[J]. Genetics in Medicine Open, 2024, 2.
+2.  Kim S, Corey V, Chavez M, et al. P761: Calculating maternal polygenic risk scores from prenatal screening by cell-free DNA data[J]. Genetics in Medicine Open, 2024, 2.
 
 ### 血液肿瘤
 
-5.  Short N J, Patel K P, Albitar M, et al. Targeted next-generation sequencing of circulating cell-free DNA vs bone marrow in patients with acute myeloid leukemia[J]. Blood Advances, 2020, 4(8): 1670-1677.
+1.  Short N J, Patel K P, Albitar M, et al. Targeted next-generation sequencing of circulating cell-free DNA vs bone marrow in patients with acute myeloid leukemia[J]. Blood Advances, 2020, 4(8): 1670-1677.
 
-6.  Gutierrez-Rodrigues, Fernanda, et al. "Utility of plasma cell-free DNA for de novo detection and quantification of clonal hematopoiesis."Haematologica(2020).
+2.  Gutierrez-Rodrigues, Fernanda, et al. "Utility of plasma cell-free DNA for de novo detection and quantification of clonal hematopoiesis."Haematologica(2020).
 
 ### 临床rWGS
 
-7.  [Owen M J, Lefebvre S, Hansen C, et al. An automated 13.5 hour system for scalable diagnosis and acute management guidance for genetic diseases[J]. Nature Communications, 2022, 13(1): 4057.](https://www.nature.com/articles/s41467-022-31446-6)
+1.  [Owen M J, Lefebvre S, Hansen C, et al. An automated 13.5 hour system for scalable diagnosis and acute management guidance for genetic diseases[J]. Nature Communications, 2022, 13(1): 4057.](https://www.nature.com/articles/s41467-022-31446-6)
 
-8.  Lumaka A, Fasquelle C, Debray F G, et al. Rapid Whole Genome Sequencing Diagnoses and Guides Treatment in Critically Ill Children in Belgium in Less than 40 Hours[J]. International Journal of Molecular Sciences, 2023, 24(4): 4003.
+2.  Lumaka A, Fasquelle C, Debray F G, et al. Rapid Whole Genome Sequencing Diagnoses and Guides Treatment in Critically Ill Children in Belgium in Less than 40 Hours[J]. International Journal of Molecular Sciences, 2023, 24(4): 4003.
 
-9.  Clark M M, Hildreth A, Batalov S, et al. Diagnosis of genetic diseases in seriously ill children by rapid whole-genome sequencing and automated phenotyping and interpretation[J]. Science translational medicine, 2019, 11(489).
-
-### 药物基因组学
-
-Malhotra A, Hejja R, Avecilla J, et al. P507: Implementation of automated pharmacogenomics reporting for a clinically validated whole genome sequencing test[J]. Genetics in Medicine Open, 2023, 1(1).
+3.  Clark M M, Hildreth A, Batalov S, et al. Diagnosis of genetic diseases in seriously ill children by rapid whole-genome sequencing and automated phenotyping and interpretation[J]. Science translational medicine, 2019, 11(489).
 
 ### 肿瘤
 
-Duncavage EJ, Schroeder MC, O'Laughlin M, et al. Genome Sequencing as an Alternative to Cytogenetic Analysis in Myeloid Cancers.N Engl J Med. 2021;384(10):924-935. doi:10.1056/NEJMoa2024534
+1.  Duncavage EJ, Schroeder MC, O'Laughlin M, et al. Genome Sequencing as an Alternative to Cytogenetic Analysis in Myeloid Cancers.N Engl J Med. 2021;384(10):924-935. doi:10.1056/NEJMoa2024534
 
-Hallermayr A, Wohlfrom T, Steinke-Lange V, et al. Somatic copy number alteration and fragmentation analysis in circulating tumor DNA for cancer screening and treatment monitoring in colorectal cancer patients. Hematol Oncol. 2022;15(1):125. Published 2022 Sep 2. doi:10.1186/s13045-022-01342-z
+2.  Hallermayr A, Wohlfrom T, Steinke-Lange V, et al. Somatic copy number alteration and fragmentation analysis in circulating tumor DNA for cancer screening and treatment monitoring in colorectal cancer patients. Hematol Oncol. 2022;15(1):125. Published 2022 Sep 2. doi:10.1186/s13045-022-01342-z
 
-Lan Y T, Chang S C, Lin P C, et al. High concordance of mutation patterns in 10 common mutated genes between tumor tissue and cell-free DNA in metastatic colorectal cancer[J]. American journal of cancer research, 2021, 11(5): 2228.
+3.  Lan Y T, Chang S C, Lin P C, et al. High concordance of mutation patterns in 10 common mutated genes between tumor tissue and cell-free DNA in metastatic colorectal cancer[J]. American journal of cancer research, 2021, 11(5): 2228.
 
 ### 临床中国客户
 
