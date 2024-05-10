@@ -46,6 +46,18 @@
 
 9.  Clark M M, Hildreth A, Batalov S, et al. Diagnosis of genetic diseases in seriously ill children by rapid whole-genome sequencing and automated phenotyping and interpretation[J]. Science translational medicine, 2019, 11(489).
 
+### 药物基因组学
+
+Malhotra A, Hejja R, Avecilla J, et al. P507: Implementation of automated pharmacogenomics reporting for a clinically validated whole genome sequencing test[J]. Genetics in Medicine Open, 2023, 1(1).
+
+### 肿瘤
+
+Duncavage EJ, Schroeder MC, O'Laughlin M, et al. Genome Sequencing as an Alternative to Cytogenetic Analysis in Myeloid Cancers.N Engl J Med. 2021;384(10):924-935. doi:10.1056/NEJMoa2024534
+
+Hallermayr A, Wohlfrom T, Steinke-Lange V, et al. Somatic copy number alteration and fragmentation analysis in circulating tumor DNA for cancer screening and treatment monitoring in colorectal cancer patients. Hematol Oncol. 2022;15(1):125. Published 2022 Sep 2. doi:10.1186/s13045-022-01342-z
+
+Lan Y T, Chang S C, Lin P C, et al. High concordance of mutation patterns in 10 common mutated genes between tumor tissue and cell-free DNA in metastatic colorectal cancer[J]. American journal of cancer research, 2021, 11(5): 2228.
+
 ### 临床中国客户
 
 1. [Yang Y, Zhao S, Sun G, et al. Genomic architecture of fetal central nervous system anomalies using whole-genome sequencing[J]. NPJ Genomic Medicine, 2022, 7(1): 31.](https://www.nature.com/articles/s41525-022-00301-4)**湖北省妇幼保健院**
