@@ -1,3 +1,8 @@
+
+**Illumina官方整理:**[https://developer.illumina.com/news-updates/dragen-publications](https://developer.illumina.com/news-updates/dragen-publications)
+
+# 科研方向
+
 ## 银杏树GWAS全基因组关联分析
 
 1.  [Zhao Y P, Fan G, Yin P P, et al. Resequencing 545 ginkgo genomes across the world reveals the evolutionary history of the living fossil[J]. Nature communications, 2019, 10(1): 1-10.](https://www.nature.com/articles/s41467-019-12133-5)
