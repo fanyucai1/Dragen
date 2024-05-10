@@ -28,7 +28,7 @@
 
 ## Explore recent
 
-[DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications) 
+[DRAGEN publications](Publication/README.md) 
 
 [Illumina DRAGEN Bio-IT Platform Product Files](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
 
