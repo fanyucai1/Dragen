@@ -74,4 +74,8 @@
 
 4.  [Genomics England:Rare Disease Pipeline 2.0](https://re-docs.genomicsengland.co.uk/rare_disease_3.pdf)
 
-5.  Jain A, Bhoyar R C, Pandhare K, et al. IndiGenomes: a comprehensive resource of genetic variants from over 1000 Indian genomes[J]. Nucleic Acids Research, 2021, 49(D1): D1225-D1232.
+5.  Jain A, Bhoyar R C, Pandhare K, et al. IndiGenomes: a comprehensive resource of genetic variants from over 1000 **Indian genomes**[J]. Nucleic Acids Research, 2021, 49(D1): D1225-D1232.
+
+6.  [Qatar Genome Program is about to enter a new era thanks to Illumina #DRAGEN](https://www.linkedin.com/posts/hamdimbarek_dragen-v4-40k-activity-7154747419908268032-Piej)
+
+
