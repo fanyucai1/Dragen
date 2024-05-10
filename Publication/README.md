@@ -74,7 +74,7 @@
 
 3.  Scheffler K, Catreux S, O’Connell T, et al. Somatic small-variant calling methods in Illumina DRAGEN™ Secondary Analysis[J]. bioRxiv, 2023: 2023.03. 23.534011.
 
-4.  Behera S, Catreux S, Rossi M, et al. Comprehensive and accurate genome analysis at scale using DRAGEN accelerated algorithms[J]. bioRxiv, 2024: 2024.01. 02.573821.
+4.  [Behera S, Catreux S, Rossi M, et al. Comprehensive and accurate genome analysis at scale using DRAGEN accelerated algorithms[J]. bioRxiv, 2024: 2024.01. 02.573821.](https://pubmed.ncbi.nlm.nih.gov/38260545/)
 
 ## 国际人群队列
 
