@@ -1,7 +1,5 @@
 # dragen学习资料汇总
 
-![WGS_bioinformatics_pipeline.jpg](./WGS_bioinformatics_pipeline.jpg)
-
 ## 文档
 
 - [dragen在线帮助文档](https://support-docs.illumina.com/SW/dragen_v42/Content/SW/FrontPages/DRAGEN.htm)
