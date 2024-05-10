@@ -23,6 +23,7 @@
 - [体细胞-tumor vs normal](somatic_tumor_normal/README.md)
 - [变异注释](./annotation/README.md)
 - [RNAseq数据分析](./RNAseq/README.md)
+- [第三方工具兼容](./Third-party-tools/README.md)
 
 
 ## Explore recent
@@ -40,16 +41,6 @@ a population SNP VCF， can be used *--cnv-population-b-allele-vcf* option
 [1000G_phase1.snps.high_confidence.b37.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg19/v0/1000G_phase1.snps.high_confidence.b37.vcf.gz)
 
 [1000G_phase1.snps.high_confidence.hg38.vcf.gz](https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/1000G_phase1.snps.high_confidence.hg38.vcf.gz)
-
-## Third-party tool compatibility
-
-[MultiQC searches a given directory for analysis logs and compiles a HTML report. It's a general use tool, perfect for summarising the output from numerous bioinformatics tools.](https://multiqc.info/)
-
-![MultiQC](Third-party-tools/MultiQC.png)
-
-[Fusion-report is part of a bigger project nf-core/rnafusion which is designed to detect and report fusion genes from RNA-seq data.](https://github.com/Clinical-Genomics/fusion-report)
-
-![fusion-report](Third-party-tools/fusion_report.png)
 
 ## Technical Assistance
 
