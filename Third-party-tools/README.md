@@ -4,21 +4,22 @@
 
 ![MultiQC](./MultiQC.png)
 
-
 # 基因融合工具
 
 [Fusion-report is part of a bigger project nf-core/rnafusion which is designed to detect and report fusion genes from RNA-seq data.](https://github.com/Clinical-Genomics/fusion-report)
 
 ![fusion-report](./fusion_report.png)
 
-# RNAseq差异表达
+# RNAseq差异表达+甲基化数据分析
 
-Draggen+Tximport/DESeq2
+RNA:Draggen+**Tximport/DESeq2**
 
-# 甲基化数据分析
+Methylation:Dragen+**methylKit/epialleleR**
 
-Dragen+methylKit/epialleleR
+![RNA_methylation](./RNA_methylation.png)
 
 # 单细胞数据分析
 
 Dragen+[SEQUIN:https://sequin.ncats.io/app/](https://sequin.ncats.io/app/)
+
+![single_cell](./single_cell.png)
