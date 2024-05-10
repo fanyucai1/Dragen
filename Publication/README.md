@@ -1,4 +1,4 @@
-[DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications)
+## [DRAGEN publications](https://developer.illumina.com/news-updates/dragen-publications)
 
 ### 银杏树GWAS全基因组关联分析
 
