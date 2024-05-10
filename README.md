@@ -1,5 +1,7 @@
 # dragen学习资料汇总
 
+![dragen](./Dragen.png)
+
 ## 文档
 
 - [dragen在线帮助文档](https://support-docs.illumina.com/SW/dragen_v42/Content/SW/FrontPages/DRAGEN.htm)
