@@ -6,19 +6,19 @@
 
 ### 冬小麦重测序
 
-2.  [Ensembl Plants datasets:Triticum aestivum (bread wheat)Assembly and Gene Annotation](https://plants.ensembl.org/Triticum_aestivum/Info/Annotation/)
+1.  [Ensembl Plants datasets:Triticum aestivum (bread wheat)Assembly and Gene Annotation](https://plants.ensembl.org/Triticum_aestivum/Info/Annotation/)
 
 ### RNAseq
 
-3.  [Sato Y, Wada I, Odaira K, et al. Integrative immunogenomic analysis of gastric cancer dictates novel immunological classification and the functional status of tumor‐infiltrating cells[J]. Clinical & translational immunology, 2020, 9(10): e1194.](https://onlinelibrary.wiley.com/doi/full/10.1002/cti2.1194)
+1.  [Sato Y, Wada I, Odaira K, et al. Integrative immunogenomic analysis of gastric cancer dictates novel immunological classification and the functional status of tumor‐infiltrating cells[J]. Clinical & translational immunology, 2020, 9(10): e1194.](https://onlinelibrary.wiley.com/doi/full/10.1002/cti2.1194)
 
 ### Methylation
 
-4.  Cao M, Shao X, Chan P, et al. High-resolution analyses of human sperm dynamic methylome reveal thousands of novel age-related epigenetic alterations[J]. Clinical epigenetics, 2020, 12(1): 1-16.
+1.  Cao M, Shao X, Chan P, et al. High-resolution analyses of human sperm dynamic methylome reveal thousands of novel age-related epigenetic alterations[J]. Clinical epigenetics, 2020, 12(1): 1-16.
 
-5.  Shcherbakov D, Nigri M, Akbergenov R, et al. Premature aging in mice with error-prone protein synthesis[J]. Science Advances, 2022, 8(9): eabl9051.
+2.  Shcherbakov D, Nigri M, Akbergenov R, et al. Premature aging in mice with error-prone protein synthesis[J]. Science Advances, 2022, 8(9): eabl9051.
 
-6.  Shao X, Le Stunff C, Cheung W, et al. Differentially methylated CpGs in response to growth hormone administration in children with idiopathic short stature.Clin Epigenetics. 2022;14(1):65. Published 2022 May 18. doi:10.1186/s13148-022-01281-z.
+3.  Shao X, Le Stunff C, Cheung W, et al. Differentially methylated CpGs in response to growth hormone administration in children with idiopathic short stature.Clin Epigenetics. 2022;14(1):65. Published 2022 May 18. doi:10.1186/s13148-022-01281-z.
 
 ## 临床应用
 
