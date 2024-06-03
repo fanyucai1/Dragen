@@ -4,6 +4,8 @@
 
 下载脚本
 ```{.cs}
+mkdir -p /staging/explify_china/explify-databases/
+cd /staging/explify_china/
 wget -O explify-dbs.sh https://illumina-explify-databases.s3.us-east-1.amazonaws.com/explify-dbs.sh
 chmod +x explify-dbs.sh
 ```
@@ -11,19 +13,29 @@ chmod +x explify-dbs.sh
 查看可下载数据库版本
 ```{.cs}
 ./explify-dbs.sh search -d explify-databases/
-    2 database(s) found meeting those criteria:
+    version=1.0.3
+    Downloading manifest file to explify-databases/s3-manifest.txt
+    6 database(s) found meeting those criteria:
     - RPIP-5.11.7
     - UPIP-7.3.7
+    - Custom-1.0.0
+    - RPIP-6.3.0
+    - VSPv2-2.3.0
+    - UPIP-8.4.0
 ```
 数据库下载
 ```{.cs}
-./explify-dbs.sh download -d /staging/explify_china/explify-databases/ -p UPIP -v 7.3.7 -n 50
-./explify-dbs.sh download -d /staging/explify_china/explify-databases/ -p RPIP -v 5.11.7 -n 50
+./explify-dbs.sh download -d explify-databases/ -p UPIP -v 8.4.0 -n 20
+./explify-dbs.sh download -d explify-databases/ -p RPIP -v 6.3.0 -n 20
+./explify-dbs.sh download -d explify-databases/ -p VSPv2 -v 2.3.0 -n 20
+./explify-dbs.sh download -d explify-databases/ -p Custom -v 1.0.0 -n 20
 ```
 check数据库
 ```{.cs}
-./explify-dbs.sh check -d /staging/explify_china/explify-databases/ -p UPIP -v 7.3.7 -n 50
-./explify-dbs.sh check -d /staging/explify_china/explify-databases/ -p RPIP -v 5.11.7 -n 50
+./explify-dbs.sh check -d explify-databases/ -p Custom -v 1.0.0
+./explify-dbs.sh check -d explify-databases/ -p UPIP -v 8.4.0
+./explify-dbs.sh check -d explify-databases/ -p VSPv2 -v 2.3.0
+./explify-dbs.sh check -d explify-databases/ -p RPIP -v 6.3.0
 ```
 数据库目录结构
 
