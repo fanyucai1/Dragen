@@ -32,6 +32,10 @@
 
 [Illumina DRAGEN Bio-IT Platform Product Files](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform/product_files.html)
 
+[DRAGEN™ Installers, Resource Files, and Release Notes are available here.](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)
+
+[DRAGEN user guide](https://help.dragen.illumina.com/)
+
 [Behera S, Catreux S, Rossi M, et al. Comprehensive and accurate genome analysis at scale using DRAGEN accelerated algorithms[J]. bioRxiv, 2024: 2024.01. 02.573821.](https://www.biorxiv.org/content/10.1101/2024.01.02.573821v2.abstract)
 
 [Scheffler K, Catreux S, O’Connell T, et al. Somatic small-variant calling methods in Illumina DRAGEN™ Secondary Analysis[J]. bioRxiv, 2023: 2023.03. 23.534011.](https://www.biorxiv.org/content/10.1101/2023.03.23.534011v2.abstract)
