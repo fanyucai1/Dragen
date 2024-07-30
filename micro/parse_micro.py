@@ -251,6 +251,7 @@ with open(args.json, "r") as load_f:
                 os.remove("%s.%s.variants.vcf"%(out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))))
     out2_file.close()
     ########################################step4:Antimicrobial Resistance Markers
+    pro, nucl = 0, 0
     if len(load_dict['targetReport']['amrMarkers'])!=0:
         out6_file=open("%s.amrMarkers.tsv" % (out), "w")
         amrs = load_dict['targetReport']['amrMarkers']
@@ -267,7 +268,6 @@ with open(args.json, "r") as load_f:
                      'coverage','rpkm','alignedReadCount','medianDepth','pid','associatedMicroorganisms.detected',
                   'associatedMicroorganisms.all','associatedMicroorganisms.predicted','ntChange','aaChange']
         for arm in amrs:
-            pro, nucl = 0, 0
             value_name,value_name['ntChange'],value_name['aaChange'] ={},[],[]
             if 'variants' in arm:
                 for tmp in arm['variants']:
@@ -287,6 +287,7 @@ with open(args.json, "r") as load_f:
                     out6_file.write(f"\n{value_name[key_name[i]]}")
                 else:
                     out6_file.write(f"\t{value_name[key_name[i]]}")
+            ####################################################################output proteinConsensusSequence,nucleotideConsensusSequence
             if 'proteinConsensusSequence' in arm and arm['predictionInformation']['predictedPresent']:
                 pro+=1
                 seqid = ">%s|reference:%s" % (arm['name'], arm['referenceAccession'])
