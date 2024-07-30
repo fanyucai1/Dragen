@@ -45,7 +45,7 @@ https://pcingola.github.io/SnpEff/snpeff/build_db/#building-a-database
 https://www.ncbi.nlm.nih.gov/nuccore
 https://www.ncbi.nlm.nih.gov/nuccore
 
-## 4-2 
+## 4-2 The example is as follows(AF084271)
 ### genebank
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=AF084271&rettype=gb
 ### genebank(full)
