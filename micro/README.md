@@ -6,10 +6,7 @@ mkdir -p /staging/explify_china/explify-databases/
 cd /staging/explify_china/
 wget -O explify-dbs.sh https://illumina-explify-databases.s3.us-east-1.amazonaws.com/explify-dbs.sh
 chmod +x explify-dbs.sh
-```
 
-查看可下载数据库版本
-```{.cs}
 ./explify-dbs.sh search -d explify-databases/
     version=1.0.3
     Downloading manifest file to explify-databases/s3-manifest.txt
