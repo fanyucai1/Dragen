@@ -1,4 +1,0 @@
-Class	Microorganism	Present	Accessions	% Coverage	% ANI	Aligned Reads	Median Depth	RPKM	Absolute Quantity	Absolute Quantity(Formatted)	PhenotypicGroup	ASSOCIATED_AMR_MARKER_DETECTED	ASSOCIATED_AMR_MARKER_PREDICTED
-viral	Influenza A virus (H3N2)	True	CY106615;CY106614;CY106613;CY106608;CY106611;CY106610;CY106609;CY106612	0.9975404	0.98804545	30224	306.0	1096.5416			Unspecified		
-viral	Human papillomavirus 18 (HPV18; high-risk)	True	OP971083.1	0.666028	0.985607	13702	152	887.608			Unspecified		
-viral	Merkel cell polyomavirus (MCPyV)	True	EU375804.1	0.0563353	1	8	0	0.779596			Unspecified		
