@@ -1,13 +1,13 @@
 # Email:yucai.fan@illumina.com
 # 2014.07.19-2024.07.30
 # version:1.0
-# covlineages/pangolin:latest contains pangolin and snpEff
+# docker image covlineages/pangolin:latest contains pangolin and snpEff
     # only anno Influenza A virus and Accession in virus_version
     # get covidseq pangolin information
 # If species name does not match string(unable to type further), then output microorganisms
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output consensusGenomeSequences
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output vcf
-    # vcf and fasta file named:re.sub(r'\s', "_", re.sub(r'[()]', "", species['name']))
+    # vcf and fasta file named:re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))
 # if proteinConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output proteinConsensusSequence
 # if nucleotideConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output nucleotideConsensusSequence
 
@@ -132,43 +132,32 @@ with open(args.json, "r") as load_f:
         value_name.append(load_dict[key])
 
     ###User Options
-    cloumn_name+=['\n[User Options]\nQuantitative Internal Control Name',
-              'Quantitative Internal Control Concentration',
-              'Read QC Enabled',
-              'User Defined Microorganism Reporting List Used',
-              'User Defined Microorganism Reporting List File',
-              'Below Threshold Enabled',
-              'Read Classification Sensitivity',
-              'Provided Analysis Name']
-    key_name=['quantitativeInternalControlName',
-              'quantitativeInternalControlConcentration',
-              'readQcEnabled',
-              'userDefinedMicroorganismReportingListUsed',
-              'userDefinedMicroorganismReportingListFile','belowThresholdEnabled','readClassificationSensitivity','providedAnalysisName']
-    description+=['Quantitative Internal Control used for microorganism absolute quantification',
-                  'Quantitative Internal Control concentration used for microorganism absolute quantification',
-                  'Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled',
-                  'Boolean indicating if a user-defined microorganism reporting file was specified',
-                  'Name of the user-defined microorganism reporting file',
-                  'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported',
-                  'Sensitivity threshold for classifying reads',
-                  'User-provided analysis name']
+    key_name=['quantitativeInternalControlName','quantitativeInternalControlConcentration','readQcEnabled',
+              'userDefinedMicroorganismReportingListUsed','userDefinedMicroorganismReportingListFile',
+              'belowThresholdEnabled','readClassificationSensitivity','providedAnalysisName']
+    cloumn_name+=['\n[User Options]\nQuantitative Internal Control Name','Quantitative Internal Control Concentration','Read QC Enabled',
+              'User Defined Microorganism Reporting List Used','User Defined Microorganism Reporting List File',
+              'Below Threshold Enabled','Read Classification Sensitivity','Provided Analysis Name']
+    description+=['Quantitative Internal Control used for microorganism absolute quantification','Quantitative Internal Control concentration used for microorganism absolute quantification','Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled',
+                  'Boolean indicating if a user-defined microorganism reporting file was specified','Name of the user-defined microorganism reporting file',
+                  'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported','Sensitivity threshold for classifying reads','User-provided analysis name']
     for key in key_name:
         if key in load_dict['userOptions']:
             value_name.append(load_dict['userOptions'][key])
         else:
             value_name.append("-")
-
     #output
     for i in range(0, len(cloumn_name)):
         out1_file.write(f"{cloumn_name[i]}\t{value_name[i]}\t{description[i]}\n")
-
     ### Internal Controls
     Internal_Controls = qcReport['internalControls']
     out1_file.write("\n[Internal Controls]\n")
     for key in Internal_Controls:
         key['rpkm']=format(int(key['rpkm']), ",")
-        out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']} control\n")
+        if re.search(r'control$',key['name'],re.IGNORECASE):
+            out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']}\n")
+        else:
+            out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']} control\n")
     out1_file.close()
     ########################################step2:Microorganisms
     out2_file = open("%s.microorganism.tsv" % out, "w")
@@ -188,7 +177,7 @@ with open(args.json, "r") as load_f:
         value_name['predictionInformation.predictedPresent'] = species['predictionInformation']['predictedPresent']
         accessions = ""
         if 'consensusGenomeSequences' in species and not re.search('unable to type further',species['name']) and species['predictionInformation']['predictedPresent']:  ###############output consensus sequences
-            out3_file = open("%s.%s.fa" % (out,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name']))), "w")
+            out3_file = open("%s.%s.fa" % (out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
             for key in species['consensusGenomeSequences']:  # Consensus genome information. Included for RPIP viruses only.
                 accessions += key['referenceAccession'] + ";"
                 out3_file.write(">%s|reference:%s|description:%s|reference_length:%s|maximum_alignment_length:%s"
@@ -227,7 +216,7 @@ with open(args.json, "r") as load_f:
                     out2_file.write(f"\t{value_name[key_name[i]]}")
     ################################################################step3:The variants object is only present for select viruses
         if 'variants' in species and not re.search('unable to type further',species['name']) and species['predictionInformation']['predictedPresent']:
-            out4_file = open("%s.%s.variants.vcf" % (out,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name']))), "w")
+            out4_file = open("%s.%s.variants.vcf" % (out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
             out4_file.write("##fileformat=VCFv4.2\n##source=DRAGEN Microbial Enrichment Plus\n"
                             "##INFO=<ID=AF,Number=1,Type=Float,Description=\"Allele Frequency\">\n"
                             "##INFO=<ID=DP,Number=1,Type=Integer,Description=\"Read Depth\">\n"
@@ -259,6 +248,7 @@ with open(args.json, "r") as load_f:
                        "\'java -Xmx64g -jar /software/snpEff/snpEff.jar "
                        "virus /database/%s.%s.variants.vcf >/database/%s.%s.anno.vcf\'")% (args.outdir, pangolin_snpeff, prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])), prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
                 subprocess.check_call(cmd, shell=True)
+                os.remove("%s.%s.variants.vcf"%(out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))))
     out2_file.close()
     ########################################step4:Antimicrobial Resistance Markers
     if len(load_dict['targetReport']['amrMarkers'])!=0:
