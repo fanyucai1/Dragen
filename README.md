@@ -4,11 +4,10 @@
 
 ## 文档
 
-- [dragen在线帮助文档](https://support-docs.illumina.com/SW/dragen_v42/Content/SW/FrontPages/DRAGEN.htm)
-- [dragen软件下载](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html?langsel=/my/)
-- [dragen-bio-it-platform-Getting Started Guide.pdf](Dcouments/dragen-bio-it-platform-Getting-Started-Guide.pdf)
-- [dragen-platform-v4.2-guide.pdf](Dcouments/dragen-platform-v4.2-guide.pdf)
-- [4.2-Customer-Release-Notes.pdf](Dcouments/4.2-Customer-Release-Notes.pdf)
+- [dragen在线帮助文档](https://help.dragen.illumina.com/)
+- [dragen软件下载](https://sapac.support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)
+- [4.3-Customer-Release-Notes.pdf](Dcouments/4.3-Customer-Release-Notes.pdf)
+- [dragen-bio-it-platform-Getting-Started-Guide.pdf](Dcouments/dragen-bio-it-platform-Getting-Started-Guide.pdf)
 
 ## 流程使用说明
 
