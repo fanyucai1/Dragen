@@ -34,7 +34,7 @@ RUN apk update && \
 ENV PATH /opt/conda/envs/pangolin/bin:$PATH
  ```
 
-**Attention:snpEff build a genome database using GeneBank filesgenes.gbk **
+Attention:snpEff build a genome database using GeneBank files **genes.gbk**
 
 
 # 3. snpeff:Building a database from GenBank files

@@ -30,8 +30,8 @@ virus_version={'AY555152':'AY555152.3','AF084271':'AF084271.1',
                'MK495308':'MK495308.1','MK495311':'MK495311.1'
                }
 
-parse=argparse.ArgumentParser("This script will parse dragen v4.3 VSPv2 json file.\n")
-parse.add_argument("-j","--json",help="json file from dragen v4.3 VSPv2",required=True)
+parse=argparse.ArgumentParser("This script will parse dragen v4.3 VSPv2/RPIP/UPIP json file.\n")
+parse.add_argument("-j","--json",help="json file from dragen v4.3 VSPv2/RPIP/UPIP",required=True)
 parse.add_argument("-o","--outdir",help="output directory",default=os.getcwd())
 args=parse.parse_args()
 args.json=os.path.abspath(args.json)
