@@ -34,7 +34,7 @@ check数据库
 ```
 数据库目录结构
 
-![数据库目录结构](./database_directory_tree.png){width=200}
+![数据库目录结构](./database_directory_tree.png)
 
 
 备注：这个数据库非常大大概70G，如果客户安端装建议下载到移动硬盘给客户
