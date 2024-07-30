@@ -1,0 +1,159 @@
+##fileformat=VCFv4.2
+##source=DRAGEN Microbial Enrichment Plus
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##INFO=<ID=SG,Number=1,Type=String,Description="Segment Name">
+##INFO=<ID=gene,Number=1,Type=String,Description="gene Name">
+##INFO=<ID=annotation,Number=1,Type=String,Description="Type of change (e.g. "Nonsynonymous Variant")">
+##INFO=<ID=product,Number=1,Type=String,Description="The protein product of the gene">
+##SnpEffVersion="5.2c (build 2024-04-09 12:24), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  virus /database/VSPv2-SW-005-H3N2-T7.Influenza_A_virus_H3N2.variants.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+CY106611	117	.	T	C	.	PASS	AF=1.0;DP=134;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	183	.	T	G	.	PASS	AF=0.26041666;DP=192;SG=5;gene=NP;annotation=Nonsynonymous Variant;product=NP;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	334	.	G	A	.	PASS	AF=0.45192307;DP=208;SG=5;gene=NP;annotation=Nonsynonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	396	.	C	G	.	PASS	AF=0.99130434;DP=230;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	462	.	A	G	.	PASS	AF=0.990991;DP=222;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	612	.	G	A	.	PASS	AF=0.9782609;DP=184;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	669	.	G	A	.	PASS	AF=0.9893617;DP=188;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	798	.	T	C	.	PASS	AF=0.9939759;DP=332;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1059	.	G	A	.	PASS	AF=0.9925926;DP=540;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1284	.	T	C	.	PASS	AF=0.99264705;DP=544;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1363	.	G	A	.	PASS	AF=0.9921875;DP=512;SG=5;gene=NP;annotation=Nonsynonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1381	.	G	A	.	PASS	AF=1.0;DP=498;SG=5;gene=NP;annotation=Nonsynonymous Variant;product=NP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1422	.	T	C	.	PASS	AF=1.0;DP=348;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1517	.	A	G	.	PASS	AF=0.24;DP=50;SG=5;gene=NP;annotation=Nonsynonymous Variant;product=NP;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106611	1521	.	C	T	.	PASS	AF=1.0;DP=24;SG=5;gene=NP;annotation=Synonymous Variant;product=NP;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	107	.	G	A	.	PASS	AF=1.0;DP=440;SG=8;gene=NS1;annotation=Synonymous Variant;product=NS1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	145	.	A	G	.	PASS	AF=0.9858156;DP=564;SG=8;gene=NS1;annotation=Nonsynonymous Variant;product=NS1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	227	.	A	G	.	PASS	AF=0.99310344;DP=580;SG=8;gene=NS1;annotation=Synonymous Variant;product=NS1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	308	.	A	G	.	PASS	AF=0.973822;DP=764;SG=8;gene=NS1;annotation=Synonymous Variant;product=NS1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	316	.	C	A	.	PASS	AF=0.98994976;DP=796;SG=8;gene=NS1;annotation=Nonsynonymous Variant;product=NS1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	345	.	G	A	.	PASS	AF=0.9897436;DP=780;SG=8;gene=NS1;annotation=Nonsynonymous Variant;product=NS1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	410	.	A	G	.	PASS	AF=0.9958506;DP=964;SG=8;gene=NS1;annotation=Synonymous Variant;product=NS1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	648	.	C	T	.	PASS	AF=0.9569891999999999;DP=372;SG=8;gene=NS1;annotation=Nonsynonymous Variant;product=NS1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	847	.	A	T	.	PASS	AF=0.21428572;DP=28;SG=8;gene=NEP;annotation=Nonsynonymous Variant;product=NEP;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	847	.	ATTT	A	.	PASS	AF=0.21428572;DP=28;SG=8;gene=NEP;annotation=Stop Lost&Disruptive Inframe Deletion&Splice Region Variant;product=NEP;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	859	.	A	AT	.	PASS	AF=0.25;DP=8;SG=8;gene=NEP-CHR END;annotation=Intergenic Region;product=NEP-CHR END;ANN=AT||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106612	862	.	A	G	.	PASS	AF=0.25;DP=8;SG=8;gene=NEP-CHR END;annotation=Intergenic Region;product=NEP-CHR END;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	8	.	AT	TC	.	PASS	AF=0.2;DP=10;SG=4;gene=CHR START-HA;annotation=Intergenic Region;product=HA;ANN=TC||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	69	.	A	C	.	PASS	AF=0.972973;DP=74;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	219	.	A	G	.	PASS	AF=0.99489796;DP=392;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	246	.	G	A	.	PASS	AF=0.99489796;DP=392;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	341	.	T	C	.	PASS	AF=0.98660713;DP=448;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	494	.	T	A	.	PASS	AF=0.98941797;DP=378;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	532	.	C	T	.	PASS	AF=1.0;DP=334;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	536	.	A	C	.	PASS	AF=0.9756098;DP=328;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	537	.	TC	TT	.	PASS	AF=0.9756098;DP=328;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=TT||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	557	.	T	C	.	PASS	AF=1.0;DP=306;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	629	.	T	A	.	PASS	AF=0.9913793;DP=232;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	643	.	T	C	.	PASS	AF=0.9915254;DP=236;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	700	.	T	C	.	PASS	AF=0.95652175;DP=230;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	729	.	A	G	.	PASS	AF=0.9875776;DP=322;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	735	.	G	A	.	PASS	AF=0.99441344;DP=358;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	868	.	AG	GA	.	PASS	AF=0.98255813;DP=688;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=GA||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1169	.	T	C	.	PASS	AF=0.990566;DP=424;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1265	.	G	A	.	PASS	AF=0.9957447;DP=470;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1310	.	C	T	.	PASS	AF=0.977169;DP=438;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1314	.	G	A	.	PASS	AF=0.98689955;DP=458;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1490	.	T	C	.	PASS	AF=0.90625;DP=448;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1522	.	A	C	.	PASS	AF=0.99609375;DP=512;SG=4;gene=HA;annotation=Nonsynonymous Variant;product=HA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1562	.	C	T	.	PASS	AF=0.99335545;DP=602;SG=4;gene=HA;annotation=Synonymous Variant;product=HA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106608	1728	.	A	G	.	PASS	AF=0.25;DP=32;SG=4;gene=HA-CHR END;annotation=Intergenic Region;product=HA-CHR END;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	238	.	T	C	.	PASS	AF=0.99029124;DP=412;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	382	.	A	G	.	PASS	AF=0.98295456;DP=352;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	535	.	A	G	.	PASS	AF=0.9876543;DP=324;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	649	.	A	T	.	PASS	AF=1.0;DP=266;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	706	.	G	A	.	PASS	AF=0.9908257;DP=218;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	715	.	A	T	.	PASS	AF=1.0;DP=216;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	842	.	G	T	.	PASS	AF=0.99248123;DP=266;SG=1;gene=PB2;annotation=Nonsynonymous Variant;product=PB2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	880	.	T	C	.	PASS	AF=1.0;DP=264;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	907	.	G	A	.	PASS	AF=1.0;DP=252;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	982	.	T	C	.	PASS	AF=0.99285716;DP=280;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1040	.	G	A	.	PASS	AF=0.9714286;DP=210;SG=1;gene=PB2;annotation=Nonsynonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1159	.	G	A	.	PASS	AF=0.983871;DP=372;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1231	.	G	A	.	PASS	AF=0.99557525;DP=452;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1397	.	A	G	.	PASS	AF=0.9896373;DP=386;SG=1;gene=PB2;annotation=Nonsynonymous Variant;product=PB2;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1870	.	T	C	.	PASS	AF=0.955414;DP=314;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	1930	.	G	A	.	PASS	AF=0.99115044;DP=226;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	2119	.	A	G	.	PASS	AF=1.0;DP=260;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	2183	.	T	C	.	PASS	AF=0.9916667;DP=240;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106615	2197	.	G	A	.	PASS	AF=1.0;DP=224;SG=1;gene=PB2;annotation=Synonymous Variant;product=PB2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106613.1	18	.	A	T	.	PASS	AF=0.2;DP=10;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=T|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.6A>T|p.Glu2Asp|6/2151|6/2151|2/716||,T|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.6A>T|p.???2???|6/2151|6/2151|2/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	19	.	GAT	TCG	.	PASS	AF=0.2;DP=10;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=TCG|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.7_9delGATinsTCG|p.Asp3Ser|7/2151|7/2151|3/716||,TCG|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.7_9delGATinsTCG|p.???3Ser|7/2151|7/2151|3/716||WARNING_TRANSCRIPT_NO_START_CODON
+CY106613.1	22	.	TTT	AAA	.	PASS	AF=0.2;DP=10;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=AAA|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.10_12delTTTinsAAA|p.Phe4Lys|10/2151|10/2151|4/716||,AAA|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.10_12delTTTinsAAA|p.???4Lys|10/2151|10/2151|4/716||WARNING_TRANSCRIPT_NO_START_CODON
+CY106613.1	25	.	GT	TG	.	PASS	AF=0.2;DP=10;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=TG|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.13_14delGTinsTG|p.Val5Trp|13/2151|13/2151|5/716||,TG|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.13_14delGTinsTG|p.6|13/2151|13/2151|5/716||WARNING_TRANSCRIPT_NO_START_CODON
+CY106613.1	220	.	G	A	.	PASS	AF=0.9910714;DP=224;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=A|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.208G>A|p.Ala70Thr|208/2151|208/2151|70/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.208G>A|p.???70???|208/2151|208/2151|70/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	315	.	A	G	.	PASS	AF=1.0;DP=256;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.303A>G|p.Gly101Gly|303/2151|303/2151|101/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.303A>G|p.???101???|303/2151|303/2151|101/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	375	.	A	G	.	PASS	AF=0.9831933;DP=238;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.363A>G|p.Gly121Gly|363/2151|363/2151|121/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.363A>G|p.???121???|363/2151|363/2151|121/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	411	.	A	G	.	PASS	AF=1.0;DP=240;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.399A>G|p.Glu133Glu|399/2151|399/2151|133/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.399A>G|p.???133???|399/2151|399/2151|133/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	468	.	G	A	.	PASS	AF=0.96629214;DP=178;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.456G>A|p.Gly152Gly|456/2151|456/2151|152/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.456G>A|p.???152???|456/2151|456/2151|152/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	522	.	A	G	.	PASS	AF=0.9910714;DP=224;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.510A>G|p.Arg170Arg|510/2151|510/2151|170/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.510A>G|p.???170???|510/2151|510/2151|170/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	573	.	C	A	.	PASS	AF=0.98630136;DP=292;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.561C>A|p.Leu187Leu|561/2151|561/2151|187/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.561C>A|p.???187???|561/2151|561/2151|187/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	993	.	G	A	.	PASS	AF=0.95454544;DP=176;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.981G>A|p.Glu327Glu|981/2151|981/2151|327/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.981G>A|p.???327???|981/2151|981/2151|327/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1054	.	A	G	.	PASS	AF=1.0;DP=162;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=G|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1042A>G|p.Ile348Val|1042/2151|1042/2151|348/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1042A>G|p.???348???|1042/2151|1042/2151|348/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1180	.	T	C	.	PASS	AF=0.972973;DP=222;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1168T>C|p.Leu390Leu|1168/2151|1168/2151|390/716||,C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1168T>C|p.???390???|1168/2151|1168/2151|390/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1200	.	A	C	.	PASS	AF=1.0;DP=214;SG=3;gene=PA;annotation=Nonsynonymous Variant;product=PA;ANN=C|missense_variant|MODERATE|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1188A>C|p.Glu396Asp|1188/2151|1188/2151|396/716||,C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1188A>C|p.???396???|1188/2151|1188/2151|396/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1311	.	T	C	.	PASS	AF=0.99242425;DP=264;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1299T>C|p.Ala433Ala|1299/2151|1299/2151|433/716||,C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1299T>C|p.???433???|1299/2151|1299/2151|433/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1398	.	A	G	.	PASS	AF=0.9692308;DP=260;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1386A>G|p.Gly462Gly|1386/2151|1386/2151|462/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1386A>G|p.???462???|1386/2151|1386/2151|462/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1539	.	A	T	.	PASS	AF=0.99019605;DP=408;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=T|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1527A>T|p.Ser509Ser|1527/2151|1527/2151|509/716||,T|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1527A>T|p.???509???|1527/2151|1527/2151|509/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1563	.	T	G	.	PASS	AF=0.9719101;DP=356;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1551T>G|p.Val517Val|1551/2151|1551/2151|517/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1551T>G|p.???517???|1551/2151|1551/2151|517/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1692	.	G	A	.	PASS	AF=0.99421966;DP=346;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1680G>A|p.Pro560Pro|1680/2151|1680/2151|560/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1680G>A|p.???560???|1680/2151|1680/2151|560/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1701	.	G	A	.	PASS	AF=0.98913044;DP=368;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1689G>A|p.Leu563Leu|1689/2151|1689/2151|563/716||,A|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1689G>A|p.???563???|1689/2151|1689/2151|563/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	1977	.	A	G	.	PASS	AF=0.9892857;DP=560;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.1965A>G|p.Leu655Leu|1965/2151|1965/2151|655/716||,G|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.1965A>G|p.???655???|1965/2151|1965/2151|655/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	2037	.	T	C	.	PASS	AF=0.9754601;DP=652;SG=3;gene=PA;annotation=Synonymous Variant;product=PA;ANN=C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding|1/1|c.2025T>C|p.Asn675Asn|2025/2151|2025/2151|675/716||,C|synonymous_variant|LOW|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding|1/1|c.2025T>C|p.???675???|2025/2151|2025/2151|675/716||WARNING_TRANSCRIPT_NO_START_CODON&WARNING_REF_DOES_NOT_MATCH_GENOME
+CY106613.1	2203	.	A	C	.	PASS	AF=0.25;DP=8;SG=3;gene=PA-CHR END;annotation=Intergenic Region;product=PA-CHR END;ANN=C|downstream_gene_variant|MODIFIER|PA|Gene_12_2162|transcript|AEY69149.1|protein_coding||c.*40A>C|||||40|,C|downstream_gene_variant|MODIFIER|PA|Gene_12_2162|transcript|AHG96558.1|protein_coding||c.*40A>C|||||40|WARNING_TRANSCRIPT_NO_START_CODON,C|intergenic_region|MODIFIER|PA-CHR_END|Gene_12_2162-CHR_END|intergenic_region|Gene_12_2162-CHR_END|||n.2203A>C||||||
+CY106609	106	.	T	C	.	PASS	AF=0.99038464;DP=416;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	310	.	A	G	.	PASS	AF=0.994382;DP=712;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	328	.	G	A	.	PASS	AF=0.9950495;DP=808;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	598	.	T	A	.	PASS	AF=0.9885714000000001;DP=700;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	604	.	G	A	.	PASS	AF=1.0;DP=712;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	698	.	C	T	.	PASS	AF=0.9872612;DP=628;SG=7;gene=M1;annotation=Synonymous Variant;product=M1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	836	.	C	T	.	PASS	AF=0.99014777;DP=406;SG=7;gene=M2;annotation=Synonymous Variant;product=M2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106609	870	.	C	T	.	PASS	AF=0.98067635;DP=414;SG=7;gene=M2;annotation=Nonsynonymous Variant;product=M2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	14	.	A	C	.	PASS	AF=1.0;DP=10;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	19	.	C	T	.	PASS	AF=1.0;DP=10;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	76	.	C	T	.	PASS	AF=1.0;DP=90;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	186	.	G	A	.	PASS	AF=1.0;DP=234;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	190	.	C	T	.	PASS	AF=1.0;DP=252;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	295	.	A	G	.	PASS	AF=0.9622642;DP=318;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	406	.	T	C	.	PASS	AF=0.9811321;DP=212;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	415	.	A	G	.	PASS	AF=0.9677419;DP=186;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	425	.	A	C	.	PASS	AF=1.0;DP=184;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	436	.	G	A	.	PASS	AF=1.0;DP=174;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	455	.	C	T	.	PASS	AF=0.27722773;DP=202;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	808	.	T	A	.	PASS	AF=0.9866667;DP=450;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	874	.	C	T	.	PASS	AF=0.98285717;DP=350;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	898	.	C	A	.	PASS	AF=0.9661017;DP=354;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	928	.	G	A	.	PASS	AF=0.9842932;DP=382;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	946	.	T	C	.	PASS	AF=0.9836956;DP=368;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1036	.	A	G	.	PASS	AF=0.99526066;DP=422;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1051	.	A	G	.	PASS	AF=0.99497485;DP=398;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1231	.	C	T	.	PASS	AF=0.97109824;DP=692;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1315	.	T	C	.	PASS	AF=0.98571426;DP=700;SG=6;gene=NA;annotation=Synonymous Variant;product=NA;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1334	.	G	A	.	PASS	AF=0.99408287;DP=676;SG=6;gene=NA;annotation=Nonsynonymous Variant;product=NA;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1422	.	T	C	.	PASS	AF=0.84375;DP=64;SG=6;gene=NA-CHR END;annotation=Intergenic Region;product=NA-CHR END;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1430	.	T	G	.	PASS	AF=0.7307692;DP=52;SG=6;gene=NA-CHR END;annotation=Intergenic Region;product=NA-CHR END;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106610	1437	.	A	C	.	PASS	AF=0.73333335;DP=30;SG=6;gene=NA-CHR END;annotation=Intergenic Region;product=NA-CHR END;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	111	.	G	A	.	PASS	AF=0.984375;DP=256;SG=2;gene=PB1-F2;annotation=Nonsynonymous Variant;product=PB1-F2;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	153	.	C	T	.	PASS	AF=1.0;DP=424;SG=2;gene=PB1-F2;annotation=Nonsynonymous Variant;product=PB1-F2;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	334	.	C	T	.	PASS	AF=0.9701493;DP=536;SG=2;gene=PB1;annotation=Nonsynonymous Variant;product=PB1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	690	.	T	G	.	PASS	AF=0.98678416;DP=454;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	768	.	G	A	.	PASS	AF=0.9959514;DP=494;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	992	.	A	G	.	PASS	AF=0.9859155;DP=284;SG=2;gene=PB1;annotation=Nonsynonymous Variant;product=PB1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1094	.	G	A	.	PASS	AF=1.0;DP=328;SG=2;gene=PB1;annotation=Nonsynonymous Variant;product=PB1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1275	.	T	C	.	PASS	AF=0.99497485;DP=398;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1332	.	A	G	.	PASS	AF=0.9878788;DP=330;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1575	.	C	T	.	PASS	AF=0.9848485;DP=264;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1578	.	C	T	.	PASS	AF=0.9848485;DP=264;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1848	.	G	A	.	PASS	AF=0.9836066;DP=244;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	1965	.	G	T	.	PASS	AF=0.96842104;DP=380;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2103	.	G	A	.	PASS	AF=1.0;DP=292;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2112	.	C	T	.	PASS	AF=0.84375;DP=320;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=T||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2223	.	G	A	.	PASS	AF=0.97894734;DP=190;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=A||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2229	.	A	G	.	PASS	AF=0.9894737;DP=190;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2280	.	A	G	.	PASS	AF=0.54901963;DP=102;SG=2;gene=PB1;annotation=Synonymous Variant;product=PB1;ANN=G||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND
+CY106614	2284	.	T	C	.	PASS	AF=0.5769231;DP=104;SG=2;gene=PB1;annotation=Stop Lost&Splice Region Variant;product=PB1;ANN=C||MODIFIER|||||||||||||ERROR_CHROMOSOME_NOT_FOUND

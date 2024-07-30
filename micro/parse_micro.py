@@ -1,5 +1,5 @@
 # Email:yucai.fan@illumina.com
-# 2014.07.19-2024.07.29
+# 2014.07.19-2024.07.30
 # version:1.0
 # covlineages/pangolin:latest contains pangolin and snpEff
     # only anno Influenza A virus and Accession in virus_version
@@ -56,7 +56,7 @@ with open(args.json, "r") as load_f:
     ##sampleQc
     sampleQc = qcReport['sampleQc']
     key_name = ['totalRawReads','uniqueReads','uniqueReadsProportion', 'postQualityReads', 'postQualityReadsProportion','removedInDehostingReadsProportion', 'libraryQScore']
-    cloumn_name = ['#QC Metrics\nTotal Raw Reads','Unique Reads','(%)Unique Reads Percentage', 'Post-Quality Reads', '(%)Post-Quality Reads Percentage', '(%)De-hosted Reads','library Q-Score']
+    cloumn_name = ['[QC Metrics]\nTotal Raw Reads','Unique Reads','(%)Unique Reads Percentage', 'Post-Quality Reads', '(%)Post-Quality Reads Percentage', '(%)De-hosted Reads','library Q-Score']
     description = [
         'Number of reads in sample before read QC processing',
         'Number of unique reads in sample before read QC processing',
@@ -87,7 +87,7 @@ with open(args.json, "r") as load_f:
     sampleComposition = qcReport['sampleComposition']['readClassification']
     key_name = ['targetedMicrobial', 'untargeted', 'ambiguous', 'unclassified', 'lowComplexity',
                 'targetedInternalControl']
-    cloumn_name += ['#Sample Composition(%)\nTargeted Microbial', 'Untargeted', 'Ambiguous', 'Unclassified', 'Low Complexity',
+    cloumn_name += ['\n[Sample Composition(%)]\nTargeted Microbial', 'Untargeted', 'Ambiguous', 'Unclassified', 'Low Complexity',
                     'Targeted Internal Control']
     for key in key_name:
         value_name.append(format(float(sampleComposition[key]) * 100, ".2f"))
@@ -102,7 +102,7 @@ with open(args.json, "r") as load_f:
     ### target
     target=qcReport['sampleComposition']['targetedMicrobial']
     key_name=['viral','bacterial','fungal','parasitic','bacterialAmr']
-    cloumn_name +=['#targetedMicrobial(%)\nviral','bacterial','fungal','parasitic','bacterialAmr']
+    cloumn_name +=['\n[targetedMicrobial(%)]\nviral','bacterial','fungal','parasitic','bacterialAmr']
     for key in key_name:
         value_name.append(format(float(target[key]) * 100, ".2f"))
     description += ['Viral targeted sequences',
@@ -114,7 +114,7 @@ with open(args.json, "r") as load_f:
     ### untarget
     un_target = qcReport['sampleComposition']['untargeted']
     key_name = ['viral', 'bacterial', 'fungal', 'parasitic', 'bacterialAmr','internalControl','human']
-    cloumn_name+=['#untargeted(%)\nviral','bacterial','fungal','parasitic','bacterialAmr','internalControl','human']
+    cloumn_name+=['\n[untargeted(%)]\nviral','bacterial','fungal','parasitic','bacterialAmr','internalControl','human']
     for key in key_name:
         value_name.append(format(float(un_target[key]) * 100, ".2f"))
     description+=['Viral untargeted sequences',
@@ -124,13 +124,48 @@ with open(args.json, "r") as load_f:
                   'Bacterial AMR untargeted sequences',
                   'Internal Control (IC) untargeted sequences',
                   'Human sequences']
+    ###Version Information
+    key_name=['appVersion','testType','testVersion']
+    cloumn_name+=['\n[Version Information]\nApplication Version','Test Type','Test Version']
+    description+=['Version of the DRAGEN Microbial Enrichment Plus application','Type of the test panel','Version of the test panel']
+    for key in key_name:
+        value_name.append(load_dict[key])
+
+    ###User Options
+    cloumn_name+=['\n[User Options]\nQuantitative Internal Control Name',
+              'Quantitative Internal Control Concentration',
+              'Read QC Enabled',
+              'User Defined Microorganism Reporting List Used',
+              'User Defined Microorganism Reporting List File',
+              'Below Threshold Enabled',
+              'Read Classification Sensitivity',
+              'Provided Analysis Name']
+    key_name=['quantitativeInternalControlName',
+              'quantitativeInternalControlConcentration',
+              'readQcEnabled',
+              'userDefinedMicroorganismReportingListUsed',
+              'userDefinedMicroorganismReportingListFile','belowThresholdEnabled','readClassificationSensitivity','providedAnalysisName']
+    description+=['Quantitative Internal Control used for microorganism absolute quantification',
+                  'Quantitative Internal Control concentration used for microorganism absolute quantification',
+                  'Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled',
+                  'Boolean indicating if a user-defined microorganism reporting file was specified',
+                  'Name of the user-defined microorganism reporting file',
+                  'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported',
+                  'Sensitivity threshold for classifying reads',
+                  'User-provided analysis name']
+    for key in key_name:
+        if key in load_dict['userOptions']:
+            value_name.append(load_dict['userOptions'][key])
+        else:
+            value_name.append("-")
+
     #output
     for i in range(0, len(cloumn_name)):
         out1_file.write(f"{cloumn_name[i]}\t{value_name[i]}\t{description[i]}\n")
 
     ### Internal Controls
     Internal_Controls = qcReport['internalControls']
-    out1_file.write("#Internal Controls\n")
+    out1_file.write("\n[Internal Controls]\n")
     for key in Internal_Controls:
         key['rpkm']=format(int(key['rpkm']), ",")
         out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']} control\n")

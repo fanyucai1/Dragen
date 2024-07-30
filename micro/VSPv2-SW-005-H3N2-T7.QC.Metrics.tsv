@@ -1,0 +1,61 @@
+[QC Metrics]
+Total Raw Reads	2,000,000	Number of reads in sample before read QC processing
+Unique Reads	447,484	Number of unique reads in sample before read QC processing
+(%)Unique Reads Percentage	22.37	Percentage of unique reads in sample before read QC processing
+Post-Quality Reads	1,973,030	Number of reads in sample after read QC processing
+(%)Post-Quality Reads Percentage	98.65	Percentage of post-quality reads in sample relative to total raw reads
+(%)De-hosted Reads	7.35	Percentage of host reads in sample removed relative to total raw reads
+library Q-Score	34.149506	Quality score of the library after read QC processing
+Enrichment Factor	0.0	Enrichment factor value reflecting how well targeted regions were enriched
+Enrichment Category	not calculated	Enrichment factor category: 'poor', 'fair', 'good', or 'NC' for not calculated
+
+[Sample Composition(%)]
+Targeted Microbial	2.04	Targeted microbial (non-IC) reference sequences
+Untargeted	90.58	Untargeted reference sequences
+Ambiguous	6.29	More than one pathogen class
+Unclassified	0.18	Could not be classified
+Low Complexity	0.47	Low complexity sequence
+Targeted Internal Control	0.45	Targeted IC reference sequences
+
+[targetedMicrobial(%)]
+viral	100.00	Viral targeted sequences
+bacterial	0.00	Bacterial targeted sequences
+fungal	0.00	Fungal targeted sequences
+parasitic	0.00	Parasitic targeted sequences
+bacterialAmr	0.00	Bacterial AMR targeted sequences
+
+[untargeted(%)]
+viral	0.70	Viral untargeted sequences
+bacterial	18.51	Bacterial untargeted sequences
+fungal	3.89	Fungal untargeted sequences
+parasitic	0.21	Parasitic untargeted sequences
+bacterialAmr	0.00	Bacterial AMR untargeted sequences
+internalControl	0.15	Internal Control (IC) untargeted sequences
+human	76.54	Human sequences
+
+[Version Information]
+Application Version	1.0.0	Version of the DRAGEN Microbial Enrichment Plus application
+Test Type	VSPv2	Type of the test panel
+Test Version	2.3.0	Version of the test panel
+
+[User Options]
+Quantitative Internal Control Name	NONE	Quantitative Internal Control used for microorganism absolute quantification
+Quantitative Internal Control Concentration	1.21 x 10^7 copies/mL	Quantitative Internal Control concentration used for microorganism absolute quantification
+Read QC Enabled	True	Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled
+User Defined Microorganism Reporting List Used	False	Boolean indicating if a user-defined microorganism reporting file was specified
+User Defined Microorganism Reporting List File	Not applicable	Name of the user-defined microorganism reporting file
+Below Threshold Enabled	False	Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported
+Read Classification Sensitivity	5	Sensitivity threshold for classifying reads
+Provided Analysis Name	DME Plus 06/24/2024 13:17:00	User-provided analysis name
+
+[Internal Controls]
+Truepera radiovictrix	0	RPKM for the Truepera radiovictrix control
+Phocid alphaherpesvirus 1	0	RPKM for the Phocid alphaherpesvirus 1 control
+Escherichia virus T4	0	RPKM for the Escherichia virus T4 control
+Imtechella halotolerans	0	RPKM for the Imtechella halotolerans control
+Escherichia virus Qbeta	0	RPKM for the Escherichia virus Qbeta control
+Escherichia virus MS2	0	RPKM for the Escherichia virus MS2 control
+Enterobacteria phage T7	5,557	RPKM for the Enterobacteria phage T7 control
+Phocine morbillivirus	0	RPKM for the Phocine morbillivirus control
+Armored RNA Quant Internal Process Control	0	RPKM for the Armored RNA Quant Internal Process Control control
+Allobacillus halotolerans	0	RPKM for the Allobacillus halotolerans control
