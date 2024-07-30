@@ -266,8 +266,8 @@ with open(args.json, "r") as load_f:
         key_name=['class','name','predictionInformation.predictedPresent','predictionInformation.confidence','ncbiName','cardName','cardGeneFamily','cardModelType','referenceAccession',
                      'coverage','rpkm','alignedReadCount','medianDepth','pid','associatedMicroorganisms.detected',
                   'associatedMicroorganisms.all','associatedMicroorganisms.predicted','ntChange','aaChange']
-        pro,nucl=0,0
         for arm in amrs:
+            pro, nucl = 0, 0
             value_name,value_name['ntChange'],value_name['aaChange'] ={},[],[]
             if 'variants' in arm:
                 for tmp in arm['variants']:
