@@ -1,6 +1,6 @@
 # dragen学习资料汇总
 
-![dragen](./Dragen.png)
+![dragen](./dragen_v4.3.png)
 
 ## 文档
 
