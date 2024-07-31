@@ -2,7 +2,7 @@
 # 2014.07.19-2024.07.31
 # version:1.0
 # docker image covlineages/pangolin:latest contains pangolin and snpEff
-    # only anno Influenza A virus and Accession in virus_version
+    # only anno Influenza A virus,Influenza Band Accession in virus_version
     # get covidseq pangolin information
 # If species name does not match string(unable to type further), then output microorganisms
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output consensusGenomeSequences
