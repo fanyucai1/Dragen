@@ -125,13 +125,6 @@ with open(args.json, "r") as load_f:
                   'Bacterial AMR untargeted sequences',
                   'Internal Control (IC) untargeted sequences',
                   'Human sequences']
-    ###Version Information
-    key_name=['appVersion','testType','testVersion']
-    cloumn_name+=['\n[Version Information]\nApplication Version','Test Type','Test Version']
-    description+=['Version of the DRAGEN Microbial Enrichment Plus application','Type of the test panel','Version of the test panel']
-    for key in key_name:
-        value_name.append(load_dict[key])
-
     ###User Options
     key_name=['quantitativeInternalControlName',
               'quantitativeInternalControlConcentration',
