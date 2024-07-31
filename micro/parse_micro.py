@@ -132,15 +132,30 @@ with open(args.json, "r") as load_f:
         value_name.append(load_dict[key])
 
     ###User Options
-    key_name=['quantitativeInternalControlName','quantitativeInternalControlConcentration','readQcEnabled',
-              'userDefinedMicroorganismReportingListUsed','userDefinedMicroorganismReportingListFile',
-              'belowThresholdEnabled','readClassificationSensitivity','providedAnalysisName']
-    cloumn_name+=['\n[User Options]\nQuantitative Internal Control Name','Quantitative Internal Control Concentration','Read QC Enabled',
-              'User Defined Microorganism Reporting List Used','User Defined Microorganism Reporting List File',
-              'Below Threshold Enabled','Read Classification Sensitivity','Provided Analysis Name']
-    description+=['Quantitative Internal Control used for microorganism absolute quantification','Quantitative Internal Control concentration used for microorganism absolute quantification','Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled',
-                  'Boolean indicating if a user-defined microorganism reporting file was specified','Name of the user-defined microorganism reporting file',
-                  'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported','Sensitivity threshold for classifying reads','User-provided analysis name']
+    key_name=['quantitativeInternalControlName',
+              'quantitativeInternalControlConcentration',
+              'readQcEnabled',
+              'userDefinedMicroorganismReportingListUsed',
+              'userDefinedMicroorganismReportingListFile',
+              'belowThresholdEnabled',
+              'readClassificationSensitivity',
+              'providedAnalysisName']
+    cloumn_name+=['\n[User Options]\nQuantitative Internal Control Name',
+                  'Quantitative Internal Control Concentration',
+                  'Read QC Enabled',
+                  'User Defined Microorganism Reporting List Used',
+                  'User Defined Microorganism Reporting List File',
+                  'Below Threshold Enabled',
+                  'Read Classification Sensitivity',
+                  'Provided Analysis Name']
+    description+=['Quantitative Internal Control used for microorganism absolute quantification(recommendation: Enterobacteria phage T7)',
+                  'Quantitative Internal Control concentration used for microorganism absolute quantification(recommendation: 1.21 x 10^7 copies/mL of sample)',
+                  'Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled',
+                  'Boolean indicating if a user-defined microorganism reporting file was specified',
+                  'Name of the user-defined microorganism reporting file',
+                  'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported',
+                  'Sensitivity threshold for classifying reads.Determines whether alignment should proceed for a microorganism and/or reference sequence. Only used for VSPv2.',
+                  'User-provided analysis name']
     for key in key_name:
         if key in load_dict['userOptions']:
             value_name.append(load_dict['userOptions'][key])
