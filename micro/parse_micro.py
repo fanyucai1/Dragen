@@ -1,5 +1,5 @@
 # Email:yucai.fan@illumina.com
-# 2014.07.19-2024.07.30
+# 2014.07.19-2024.07.31
 # version:1.0
 # docker image covlineages/pangolin:latest contains pangolin and snpEff
     # only anno Influenza A virus and Accession in virus_version
