@@ -11,7 +11,7 @@
 # if proteinConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output proteinConsensusSequence
 # if nucleotideConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output nucleotideConsensusSequence
 
-import os,re
+import os,re,sys
 import subprocess,argparse
 import time
 import json
@@ -203,6 +203,7 @@ with open(args.json, "r") as load_f:
         accessions = ""
         if 'consensusGenomeSequences' in species and not re.search('unable to type further',species['name']) and species['predictionInformation']['predictedPresent']:  ###############output consensus sequences
             out3_file = open("%s.%s.fa" % (out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
+            out_file_coverage = open("%s.%s.coverage.txt" % (out, re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
             for key in species['consensusGenomeSequences']:  # Consensus genome information. Included for RPIP viruses only.
                 accessions += key['referenceAccession'] + ";"
                 out3_file.write(">%s|reference:%s|description:%s|reference_length:%s|maximum_alignment_length:%s"
@@ -212,7 +213,18 @@ with open(args.json, "r") as load_f:
                                 % (species['name'], key['referenceAccession'], key['referenceDescription'],
                                    key['referenceLength'],key['maximumAlignmentLength'], key['maximumGapLength'],
                                    key['maximumUnalignedLength'],key['coverage'], key['ani'], key['alignedReadCount'], key['medianDepth'],key['sequence']))
+                pos,sep=1,float(int(key['referenceLength'])/255)
+                for depth in key['condensedDepthVector']:
+                    if len(key['targetAnnotation'])!=1:
+                        print("Attention:This error may cause the program to produce distorted plots.")
+                        sys.exit(1)
+                    if(round(pos)>int(key['referenceLength'])):
+                        out_file_coverage.write("%s\t%s\t%s\n"%(key['targetAnnotation'][0]['target_name'],int(key['referenceLength']),round(depth, 3)))
+                    else:
+                        out_file_coverage.write("%s\t%s\t%s\n" % (key['targetAnnotation'][0]['target_name'],round(pos), round(depth, 3)))
+                    pos+=sep
             out3_file.close()
+            out_file_coverage.close()
             #################################Extract Covidseq pangolin information
             if re.search('SARS-CoV-2', species['name']):
                 cmd="docker run -v %s/:/tmp/ %s pangolin /tmp/%s.%s.fa --threads 4 --outfile /tmp/%s.%s.pangolin.results.csv"%(args.outdir,pangolin_snpeff,prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])),prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
