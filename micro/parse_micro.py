@@ -217,7 +217,7 @@ with open(args.json, "r") as load_f:
                 pos,sep=1,float(int(key['referenceLength'])/255)
                 coverage = 0
                 for depth in key['condensedDepthVector']:
-                    if len(key['targetAnnotation'])!=1:
+                    if len(key['targetAnnotation'])!=1:#只关注全基因组覆盖的
                         coverage=1
                         print("Attention:This error may cause the program to produce distorted plots.")
                     else:
