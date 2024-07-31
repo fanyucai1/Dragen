@@ -173,6 +173,16 @@ with open(args.json, "r") as load_f:
             out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']}\n")
         else:
             out1_file.write(f"{key['name']}\t{key['rpkm']}\tRPKM for the {key['name']} control\n")
+    ###details informations####
+    out1_file.write("\n[sampleComposition_details]\n")
+    species_name=['bacterial','fungal','parasitic','viral']
+    key_name=['targeted','untargeted','untargetedSubcategories']
+    for key in species_name:
+        out1_file.write("%s(%%)\n"%(key))
+        tmp=qcReport['sampleComposition'][key]
+        for key1 in key_name:
+            out1_file.write(f"{key1}\t{tmp[key1]}\n")
+        out1_file.write("\n")
     out1_file.close()
     ########################################step2:Microorganisms
     out2_file = open("%s.microorganism.tsv" % out, "w")

@@ -39,13 +39,13 @@ Test Type	VSPv2	Type of the test panel
 Test Version	2.3.0	Version of the test panel
 
 [User Options]
-Quantitative Internal Control Name	NONE	Quantitative Internal Control used for microorganism absolute quantification
-Quantitative Internal Control Concentration	1.21 x 10^7 copies/mL	Quantitative Internal Control concentration used for microorganism absolute quantification
+Quantitative Internal Control Name	NONE	Quantitative Internal Control used for microorganism absolute quantification(recommendation: Enterobacteria phage T7)
+Quantitative Internal Control Concentration	1.21 x 10^7 copies/mL	Quantitative Internal Control concentration used for microorganism absolute quantification(recommendation: 1.21 x 10^7 copies/mL of sample)
 Read QC Enabled	True	Boolean indicating if read QC (trimming and filtering based on read quality and length) was enabled
 User Defined Microorganism Reporting List Used	False	Boolean indicating if a user-defined microorganism reporting file was specified
 User Defined Microorganism Reporting List File	Not applicable	Name of the user-defined microorganism reporting file
 Below Threshold Enabled	False	Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported
-Read Classification Sensitivity	5	Sensitivity threshold for classifying reads
+Read Classification Sensitivity	5	Sensitivity threshold for classifying reads.Determines whether alignment should proceed for a microorganism and/or reference sequence. Only used for VSPv2 and RVOP
 Provided Analysis Name	DME Plus 06/24/2024 13:17:00	User-provided analysis name
 
 [Internal Controls]
@@ -59,3 +59,25 @@ Enterobacteria phage T7	5,557	RPKM for the Enterobacteria phage T7 control
 Phocine morbillivirus	0	RPKM for the Phocine morbillivirus control
 Armored RNA Quant Internal Process Control	0	RPKM for the Armored RNA Quant Internal Process Control
 Allobacillus halotolerans	0	RPKM for the Allobacillus halotolerans control
+
+[sampleComposition_details]
+bacterial(%)
+targeted	0.0
+untargeted	1.0
+untargetedSubcategories	{'other': 0.9997702, 'panel': 0.0, 'plasmid': 0.00022976691, 'ribosomalDna': 0.0}
+
+fungal(%)
+targeted	0.0
+untargeted	1.0
+untargetedSubcategories	{'other': 0.9913667, 'panel': 0.0, 'ribosomalDna': 0.008633342}
+
+parasitic(%)
+targeted	0.0
+untargeted	1.0
+untargetedSubcategories	{'other': 0.93991643, 'panel': 0.0, 'ribosomalDna': 0.060083594}
+
+viral(%)
+targeted	0.7627826
+untargeted	0.23721741
+untargetedSubcategories	{'other': 0.4259674, 'panel': 0.0, 'phage': 0.5740326}
+
