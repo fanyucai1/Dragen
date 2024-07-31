@@ -154,7 +154,7 @@ with open(args.json, "r") as load_f:
                   'Boolean indicating if a user-defined microorganism reporting file was specified',
                   'Name of the user-defined microorganism reporting file',
                   'Boolean indicating if microorganisms and/or AMR markers below detection thresholds are reported',
-                  'Sensitivity threshold for classifying reads.Determines whether alignment should proceed for a microorganism and/or reference sequence. Only used for VSPv2.',
+                  'Sensitivity threshold for classifying reads.Determines whether alignment should proceed for a microorganism and/or reference sequence. Only used for VSPv2 and RVOP',
                   'User-provided analysis name']
     for key in key_name:
         if key in load_dict['userOptions']:
