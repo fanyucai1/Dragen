@@ -125,6 +125,13 @@ with open(args.json, "r") as load_f:
                   'Bacterial AMR untargeted sequences',
                   'Internal Control (IC) untargeted sequences',
                   'Human sequences']
+    ###Version Information
+    key_name = ['dragenVersion', 'testType', 'testVersion']
+    cloumn_name += ['\n[Version Information]\nApplication Version', 'Test Type', 'Test Version']
+    description += ['Dragen Version', 'Type of the test panel',
+                    'Version of the test panel']
+    for key in key_name:
+        value_name.append(load_dict[key])
     ###User Options
     key_name=['quantitativeInternalControlName',
               'quantitativeInternalControlConcentration',
@@ -208,17 +215,21 @@ with open(args.json, "r") as load_f:
                                    key['referenceLength'],key['maximumAlignmentLength'], key['maximumGapLength'],
                                    key['maximumUnalignedLength'],key['coverage'], key['ani'], key['alignedReadCount'], key['medianDepth'],key['sequence']))
                 pos,sep=1,float(int(key['referenceLength'])/255)
+                coverage = 0
                 for depth in key['condensedDepthVector']:
                     if len(key['targetAnnotation'])!=1:
+                        coverage=1
                         print("Attention:This error may cause the program to produce distorted plots.")
-                        sys.exit(1)
-                    if(round(pos)>int(key['referenceLength'])):
-                        out_file_coverage.write("%s\t%s\t%s\n"%(key['targetAnnotation'][0]['target_name'],int(key['referenceLength']),round(depth, 3)))
                     else:
-                        out_file_coverage.write("%s\t%s\t%s\n" % (key['targetAnnotation'][0]['target_name'],round(pos), round(depth, 3)))
-                    pos+=sep
+                        if(round(pos)>int(key['referenceLength'])):
+                            out_file_coverage.write("%s\t%s\t%s\n"%(key['targetAnnotation'][0]['target_name'],int(key['referenceLength']),round(depth, 3)))
+                        else:
+                            out_file_coverage.write("%s\t%s\t%s\n" % (key['targetAnnotation'][0]['target_name'],round(pos), round(depth, 3)))
+                        pos+=sep
             out3_file.close()
             out_file_coverage.close()
+            if coverage==1:
+                os.remove("%s.%s.coverage.txt" % (out, re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))))
             #################################Extract Covidseq pangolin information
             if re.search('SARS-CoV-2', species['name']):
                 cmd="docker run -v %s/:/tmp/ %s pangolin /tmp/%s.%s.fa --threads 4 --outfile /tmp/%s.%s.pangolin.results.csv"%(args.outdir,pangolin_snpeff,prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])),prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
