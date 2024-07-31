@@ -8,6 +8,7 @@
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output consensusGenomeSequences
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output vcf
     # vcf and fasta file named:re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))
+    # output coverage file per consensusGenomeSequences
 # if proteinConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output proteinConsensusSequence
 # if nucleotideConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output nucleotideConsensusSequence
 
