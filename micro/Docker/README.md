@@ -8,7 +8,7 @@
 ```{.cs}
 FROM alpine
 # glibc+conda
-COPY virus.gbk /opt/genes.gbk
+COPY genes.gbk /opt/genes.gbk
 RUN apk update && \
     apk add --no-cache bash openjdk11 git && mkdir -p /lib64/ && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
