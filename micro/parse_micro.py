@@ -1,5 +1,5 @@
 # Email:yucai.fan@illumina.com
-# 2014.07.19-2024.07.31
+# 2014.07.19-2024.08.02
 # version:1.0
 # docker image covlineages/pangolin:latest contains pangolin and snpEff
     # only anno Influenza A virus,Influenza B and Accession in virus_version
@@ -18,19 +18,17 @@ import time
 import json
 
 pangolin_snpeff="covlineages/pangolin:latest"
-virus_version={'AY555152':'AY555152.3','AF084271':'AF084271.1',
-               'CY163781':'CY163781.1','CY181523':'CY181523.1','CY163810':'CY163810.1','CY181515':'CY181515.1',
-               'CY106613':'CY106613.1','CY115498':'CY115498.1','CY068784': 'CY068784.1','CY068787': 'CY068787.1',
-               'CY017656':'CY017656.1', 'CY017672':'CY017672.1','CY116648':'CY116648.1',
-               'EF619973':'EF619973.1',
-               'HM114587':'HM114587.1',
-               'KJ609205':'KJ609205.1','KJ609208':'KJ609208.1',
-               'NC_026434':'NC_026434.1','NC_026437':'NC_026437.1',
-               'KF280753':'KF280753.1','KF420298':'KF420298.1','KF280750':'KF280750.1','KF609513':'KF609513.1',
-               'MN055357':'MN055357.1','MN055359':'MN055359.1',
-               'MK495308':'MK495308.1','MK495311':'MK495311.1'
-               }
-
+virus_version={'CY163781': 'CY163781.1','CY163810': 'CY163810.1','CY121685': 'CY121685.1',
+               'CY121682': 'CY121682.1', 'MK239124': 'MK239124.1', 'MK239123': 'MK239123.1',
+               'KJ609205': 'KJ609205.1', 'KJ609208': 'KJ609208.1', 'EF619979': 'EF619979.1',
+               'EF619973': 'EF619973.1', 'CY181518': 'CY181518.1', 'CY181515': 'CY181515.1',
+               'NC_045512': 'NC_045512.2', 'NC_026437': 'NC_026437.1', 'MK495308': 'MK495308.1',
+               'KF280750': 'KF280750.1', 'CY068787': 'CY068787.1', 'MN055359': 'MN055359.1',
+               'CY106613': 'CY106613.1', 'NC_026434': 'NC_026434.1', 'MK495311': 'MK495311.1',
+               'KF280753': 'KF280753.1', 'HM114587': 'HM114587.1', 'CY116648': 'CY116648.1',
+               'CY017656': 'CY017656.1', 'CY017672': 'CY017672.1', 'AY555152': 'AY555152.3',
+               'CY068784': 'CY068784.1', 'MN055357': 'MN055357.1', 'CY115498': 'CY115498.1',
+               'CY181523': 'CY181523.1', 'KF420298': 'KF420298.1', 'KF609513': 'KF609513.1'}
 parse=argparse.ArgumentParser("This script will parse dragen v4.3 VSPv2/RPIP/UPIP json file.\n")
 parse.add_argument("-j","--json",help="json file from dragen v4.3 VSPv2/RPIP/UPIP",required=True)
 parse.add_argument("-o","--outdir",help="output directory",default=os.getcwd())
