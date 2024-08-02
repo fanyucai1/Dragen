@@ -283,7 +283,7 @@ with open(args.json, "r") as load_f:
                 out4_file.write("\n")
             out4_file.close()
             ############################anno use snpeff only Influenza_A_virus
-            if re.search(r'Influenza A virus|Influenza B virus', species['name']) and snp==1:
+            if re.search(r'Influenza A virus|Influenza B virus|SARS-CoV-2', species['name']) and snp==1:
                 cmd = ("docker run -v %s/:/database/ %s sh -c "
                        "\'java -Xmx64g -jar /software/snpEff/snpEff.jar "
                        "virus /database/%s.%s.variants.vcf >/database/%s.%s.anno.vcf\'")% (args.outdir, pangolin_snpeff, prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])), prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
