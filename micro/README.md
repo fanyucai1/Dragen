@@ -84,10 +84,3 @@ options:
   -o OUTDIR, --outdir OUTDIR
                         output directory
 ```
-
-docker run -v /staging4/fanyucai/target_micro/database/nextstrain/fluA/h3n2/:/database/ 
--v /staging4/fanyucai/target_micro/test_data/:/outdir/ nextclade run -D /database/ 
---input-virus-properties /database/pathogen.json
---input-tree /database/tree.json
---input-gene-map /database/genome_annotation.gff3 
---output-tsv /outdir/abc.tsv /outdir/VSPv2-SW-005-H3N2-T7.VSPv2.Influenza_A_virus_H3N2.fa
