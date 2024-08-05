@@ -351,3 +351,4 @@ with open(args.json, "r") as load_f:
         out6_file.close()
 end = time.time()
 print("Elapse time %s seconds" % (end - start))
+
