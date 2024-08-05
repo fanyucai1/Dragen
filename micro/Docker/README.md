@@ -8,7 +8,8 @@
 ```{.cs}
 FROM alpine
 # glibc+conda
-COPY genes.gbk /opt/genes.gbk
+COPY genes.gbk /opt/
+
 RUN apk update && \
     apk add --no-cache bash openjdk11 git && mkdir -p /lib64/ && \
     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
@@ -18,6 +19,7 @@ RUN apk update && \
     cd /opt/ && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh &&  \
     bash /opt/Miniconda3-latest-Linux-x86_64.sh -f -b -p /opt/conda/ &&  \
     rm -rf /opt/Miniconda3-latest-Linux-x86_64.sh /var/cache/apk/* &&  \
+    cd /bin/ && wget -O nextclade https://github.com/nextstrain/nextclade/releases/latest/download/nextclade-x86_64-unknown-linux-musl && chmod u+x ./nextclade && \
     /opt/conda/bin/conda install conda-forge::mamba &&  \
     git clone https://github.com/cov-lineages/pangolin.git &&  \
     cd pangolin/ &&  \
@@ -31,7 +33,7 @@ RUN apk update && \
     echo "virus.genome:virus" >>/software/snpEff/snpEff.config &&  \
     cp /opt/genes.gbk /software/snpEff/data/virus/  && rm /software/snpEff_latest_core.zip && \
     java -jar /software/snpEff/snpEff.jar build -genbank -v virus
-ENV PATH /opt/conda/envs/pangolin/bin:$PATH
+ENV PATH=/opt/conda/envs/pangolin/bin:$PATH
  ```
 
 Attention:snpEff build a genome database using GeneBank files **genes.gbk**
