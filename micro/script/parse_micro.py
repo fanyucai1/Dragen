@@ -7,10 +7,12 @@
 # If species name does not match string(unable to type further), then output microorganisms
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output consensusGenomeSequences
     # if consensusGenomeSequences + species['predictionInformation']['predictedPresent']=true,then output vcf
-    # vcf and fasta file named:re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))
+    # vcf and fasta file named:re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))
     # output coverage file per consensusGenomeSequences
 # if proteinConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output proteinConsensusSequence
 # if nucleotideConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output nucleotideConsensusSequence
+# 2024.08.27 bug fix:if species['predictionInformation']['predictedPresent']=false,key['targetAnnotation']=null,type default=list
+# 2024.08.28 bug fix: species['name'] contains "/",change from re.sub(r'\s', "_", re.sub(r'[();]', "", species['name'])) to re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))
 
 import os,re,sys
 import subprocess,argparse
@@ -201,8 +203,8 @@ with open(args.json, "r") as load_f:
         value_name['predictionInformation.predictedPresent'] = species['predictionInformation']['predictedPresent']
         accessions = ""
         if 'consensusGenomeSequences' in species and not re.search('unable to type further',species['name']) and species['predictionInformation']['predictedPresent']:  ###############output consensus sequences
-            out3_file = open("%s.%s.fa" % (out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
-            out_file_coverage = open("%s.%s.coverage.txt" % (out, re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
+            out3_file = open("%s.%s.fa" % (out,re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))), "w")
+            out_file_coverage = open("%s.%s.coverage.txt" % (out, re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))), "w")
             for key in species['consensusGenomeSequences']:  # Consensus genome information. Included for RPIP viruses only.
                 accessions += key['referenceAccession'] + ";"
                 out3_file.write(">%s|reference:%s|description:%s|reference_length:%s|maximum_alignment_length:%s"
@@ -215,22 +217,23 @@ with open(args.json, "r") as load_f:
                 pos,sep=1,float(int(key['referenceLength'])/255)
                 coverage = 0
                 for depth in key['condensedDepthVector']:
-                    if len(key['targetAnnotation'])!=1:#只关注全基因组覆盖的
-                        coverage=1
-                        print("Attention:This error may cause the program to produce distorted plots.")
-                    else:
-                        if(round(pos)>int(key['referenceLength'])):
-                            out_file_coverage.write("%s\t%s\t%s\n"%(key['targetAnnotation'][0]['target_name'],int(key['referenceLength']),round(depth, 3)))
+                    if key['targetAnnotation']:###################如果物种判定为假，该值为空，默认类型是list
+                        if len(key['targetAnnotation'])!=1:#只关注全基因组覆盖的
+                            coverage=1
+                            print("Attention:This error may cause the program to produce distorted plots.")
                         else:
-                            out_file_coverage.write("%s\t%s\t%s\n" % (key['targetAnnotation'][0]['target_name'],round(pos), round(depth, 3)))
-                        pos+=sep
+                            if(round(pos)>int(key['referenceLength'])):
+                                out_file_coverage.write("%s\t%s\t%s\n"%(key['targetAnnotation'][0]['target_name'],int(key['referenceLength']),round(depth, 3)))
+                            else:
+                                out_file_coverage.write("%s\t%s\t%s\n" % (key['targetAnnotation'][0]['target_name'],round(pos), round(depth, 3)))
+                            pos+=sep
             out3_file.close()
             out_file_coverage.close()
             if coverage==1:
-                os.remove("%s.%s.coverage.txt" % (out, re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))))
+                os.remove("%s.%s.coverage.txt" % (out, re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))))
             #################################Extract Covidseq pangolin information
             if re.search('SARS-CoV-2', species['name']):
-                cmd="docker run -v %s/:/tmp/ %s pangolin /tmp/%s.%s.fa --threads 4 --outfile /tmp/%s.%s.pangolin.results.csv"%(args.outdir,pangolin_snpeff,prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])),prefix,re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
+                cmd="docker run -v %s/:/tmp/ %s pangolin /tmp/%s.%s.fa --threads 4 --outfile /tmp/%s.%s.pangolin.results.csv"%(args.outdir,pangolin_snpeff,prefix,re.sub(r'[\s/]', "_", re.sub(r'[()]', "", species['name'])),prefix,re.sub(r'[\s/]', "_", re.sub(r'[()]', "", species['name'])))
                 subprocess.call(cmd, shell=True)
         value_name['Accessions']=accessions.strip(";") # Accessions
         value_name['coverage']=format(float(species['coverage'] * 100), ".2f")# Coverage
@@ -256,7 +259,7 @@ with open(args.json, "r") as load_f:
                     out2_file.write(f"\t{value_name[key_name[i]]}")
     ################################################################step3:The variants object is only present for select viruses
         if 'variants' in species and not re.search('unable to type further',species['name']) and species['predictionInformation']['predictedPresent']:
-            out4_file = open("%s.%s.variants.vcf" % (out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))), "w")
+            out4_file = open("%s.%s.variants.vcf" % (out,re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))), "w")
             out4_file.write("##fileformat=VCFv4.2\n##source=DRAGEN Microbial Enrichment Plus\n"
                             "##INFO=<ID=AF,Number=1,Type=Float,Description=\"Allele Frequency\">\n"
                             "##INFO=<ID=DP,Number=1,Type=Integer,Description=\"Read Depth\">\n"
@@ -286,9 +289,9 @@ with open(args.json, "r") as load_f:
             if (re.search(r'Influenza A virus|Influenza B virus', species['name']) and snp==1) or re.search(r'SARS-CoV-2', species['name']):
                 cmd = ("docker run -v %s/:/database/ %s sh -c "
                        "\'java -Xmx64g -jar /software/snpEff/snpEff.jar "
-                       "virus /database/%s.%s.variants.vcf >/database/%s.%s.anno.vcf\'")% (args.outdir, pangolin_snpeff, prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])), prefix, re.sub(r'\s', "_", re.sub(r'[()]', "", species['name'])))
+                       "virus /database/%s.%s.variants.vcf >/database/%s.%s.anno.vcf\'")% (args.outdir, pangolin_snpeff, prefix, re.sub(r'[\s/]', "_", re.sub(r'[()]', "", species['name'])), prefix, re.sub(r'[\s/]', "_", re.sub(r'[()]', "", species['name'])))
                 subprocess.check_call(cmd, shell=True)
-                os.remove("%s.%s.variants.vcf"%(out,re.sub(r'\s', "_", re.sub(r'[();]', "", species['name']))))
+                os.remove("%s.%s.variants.vcf"%(out,re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))))
     out2_file.close()
     ########################################step4:Antimicrobial Resistance Markers
     pro, nucl = 0, 0
