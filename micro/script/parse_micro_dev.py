@@ -51,7 +51,7 @@ def run(db,query,outdir,prefix):
             for line in infile:
                 line=line.strip()
                 array=line.split("\t")
-                if len(array)==3 and not re.search(r'unassigned',line) and array[0]!="seqName" and re.search(r'\S',array[1]):
+                if len(array)==3 and not re.search(r'unassigned|bad',line) and array[0]!="seqName" and re.search(r'\S',array[1]):
                     outfile.write("%s\n"%line)
             os.remove("%s.%s.nextclade.tsv"%(out,dir))
     outfile.close()
