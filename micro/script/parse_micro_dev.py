@@ -13,7 +13,7 @@
 # if nucleotideConsensusSequence + arm['predictionInformation']['predictedPresent']=true,then output nucleotideConsensusSequence
 # 2024.08.27 bug fix:if species['predictionInformation']['predictedPresent']=false,key['targetAnnotation']=null,type default=list
 # 2024.08.28 bug fix: species['name'] contains "/",change from re.sub(r'\s', "_", re.sub(r'[();]', "", species['name'])) to re.sub(r'[\s/]', "_", re.sub(r'[();]', "", species['name']))
-# 2024.08.29 Add a new feature that allows for the typing of the following viruses using Nextclade:
+# 2024.08.29 Add a new feature that allows for the typing of the following viruses using Nextclade
 #
 # Human immunodeficiency virus 1 (HIV-1)
 # Human respiratory syncytial virus A (HRSV-A)
