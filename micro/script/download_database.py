@@ -7,7 +7,6 @@ parser.add_argument("-d","--database",help="output directory",required=True,defa
 args=parser.parse_args()
 
 args.datbase=os.path.abspath(args.database)
-os.removedirs(args.datbase)
 os.mkdir(args.database)
 #####################################https://clades.nextstrain.org/dataset
 database_name=['nextstrain/sars-cov-2',
